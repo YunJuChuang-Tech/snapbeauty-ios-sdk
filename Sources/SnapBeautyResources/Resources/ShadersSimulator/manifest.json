@@ -1,0 +1,1495 @@
+{
+  "schema": 1,
+  "precision": "float32",
+  "origin": "backend clip-space y flip; mathematical UV remains GL v=0",
+  "programs": {
+    "PRECISION": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692"
+      },
+      "bodySha256": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692"
+    },
+    "VS_FULL": {
+      "sourceFiles": {
+        "VS_FULL.glsl": "82f57306220bf1de6f73d042d8df00263ebf87a130a67d0e9b84946c92b55a46"
+      },
+      "bodySha256": "82f57306220bf1de6f73d042d8df00263ebf87a130a67d0e9b84946c92b55a46",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "82f57306220bf1de6f73d042d8df00263ebf87a130a67d0e9b84946c92b55a46",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "77cffd2762ba4b132d2842a7076b7d2450c799f5d3d866df1f679f0748ba528a"
+    },
+    "FS_COPY": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_COPY.body.glsl": "c1733f9274ca248b4a45afd1e1c3583872de9e29cdb7c18de95a364cc6720528"
+      },
+      "bodySha256": "8c3fcfb2df27e96dbd3fed5b98c37ceff5a8b7810eb83e3d2d1f7e297136db76",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "8c3fcfb2df27e96dbd3fed5b98c37ceff5a8b7810eb83e3d2d1f7e297136db76",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "b2435d9063e32236e124ec3c5708c62ed4ff6ae838b2de36cb13f3398dc430bf"
+    },
+    "FS_BEAUTY": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_BEAUTY.body.glsl": "6aedfe8bd22519acd5ddc14bb30e0b166bf8ca98bf600d4cb8a631e3dd7be36b"
+      },
+      "bodySha256": "e5f90b0c2b4f8b8f1448ebc4c091eee2caa607303010f003465b8e9cf56e4af8",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "e5f90b0c2b4f8b8f1448ebc4c091eee2caa607303010f003465b8e9cf56e4af8",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "e28aa7af130d0d732f3dae60f5e16e5ac8726fba6006ad2f53e48585da9a1104"
+    },
+    "FS_LOCAL": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LOCAL.body.glsl": "fd6f4d8db5662308b34cb2da5ad9e395247e0d06ff197ad97ac5e0f987fbc1b4"
+      },
+      "bodySha256": "4fed143bf132dba752c655d43fbfc439cd4b63ac84fc90de626d8fa4002d7dc0",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "4fed143bf132dba752c655d43fbfc439cd4b63ac84fc90de626d8fa4002d7dc0",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "571ea0b294799466bd5eadf49daa7e3b60a45638aaac098342ad18c492f13ff1"
+    },
+    "FS_GF_VAR": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_GF_VAR.body.glsl": "fed0a205551521c8fd8149359f78eabfc6edc45ba383543f51161794e0253037"
+      },
+      "bodySha256": "68180bbe37e1218dde0a66e9be64d90c47e28042a347920a2e671455f18a3dd2",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "68180bbe37e1218dde0a66e9be64d90c47e28042a347920a2e671455f18a3dd2",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "194c0599d3d7eb72e667aa5b7b7c01530cb8b72fa4742ba09271849979066ec5"
+    },
+    "FS_GF_APPLY": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_GF_APPLY.body.glsl": "13f04573081c69c2159a54409eee09ea1fe815978a6eac112cb2546a47fcc2d4"
+      },
+      "bodySha256": "5afdc80766d03f4fb2178cfbbb54a1b5195d73d2ef44a21993e1210dfb9cc885",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "5afdc80766d03f4fb2178cfbbb54a1b5195d73d2ef44a21993e1210dfb9cc885",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "b166a3d42f98a3599bae65bce2a28fd68787061a7d3b30ee6bb2b39ab34c7faf"
+    },
+    "FS_GAUSS": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_GAUSS.body.glsl": "2682696b70cd2cfb67f93fa13c0b4609a7badda2cd21abd5bcebc9078a476f1c"
+      },
+      "bodySha256": "1b2b38dff3d59a19cd4a8a78c5a425c5536a5f4ad7f9705db18bed64fcb841c9",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "1b2b38dff3d59a19cd4a8a78c5a425c5536a5f4ad7f9705db18bed64fcb841c9",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "523845c6baeec47dcb9da345480e6fe5a9948e40bd6c777daf3a0a8006e8546d"
+    },
+    "FS_COLOR": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_COLOR.body.glsl": "36ce0c2b8467b6fe6c4f75b9b71e52170d411283e6b0e5e306cf5b7e91aea206"
+      },
+      "bodySha256": "f569b696961fc17000720474f71c33b1bbb29ccaebd1607757ed46090501e86f",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "f569b696961fc17000720474f71c33b1bbb29ccaebd1607757ed46090501e86f",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "2a37e1e1c4b45d09e0c1f454a1075b7fe67bb12cc749c2e4ed421bd0cefa7987"
+    },
+    "VS_LAYER": {
+      "sourceFiles": {
+        "VS_LAYER.glsl": "c3b04200223b9c0196b97b131730c7df0aed001de414987243b4e04113cd55f2"
+      },
+      "bodySha256": "c3b04200223b9c0196b97b131730c7df0aed001de414987243b4e04113cd55f2",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "c3b04200223b9c0196b97b131730c7df0aed001de414987243b4e04113cd55f2",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "49ed5e26c4f3826553b5e54e6272edd7d025868415ea75f03202a22b7516b41e"
+    },
+    "VS_LAYER3": {
+      "sourceFiles": {
+        "VS_LAYER3.glsl": "c054d99111adcb8ed58971451b5430fc176cd18424b88e125f06b9bd0c3e7db9"
+      },
+      "bodySha256": "c054d99111adcb8ed58971451b5430fc176cd18424b88e125f06b9bd0c3e7db9",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "c054d99111adcb8ed58971451b5430fc176cd18424b88e125f06b9bd0c3e7db9",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "59553be9724453f37bcaa77a5d7707d6b946b6837d48b3c78ce448e3c8224323"
+    },
+    "VS_WARP_FIELD": {
+      "sourceFiles": {
+        "VS_WARP_FIELD.glsl": "edb46846b19d6f85451a1f8573786dba398d023861396a51d061c1d0893a9078"
+      },
+      "bodySha256": "edb46846b19d6f85451a1f8573786dba398d023861396a51d061c1d0893a9078",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "edb46846b19d6f85451a1f8573786dba398d023861396a51d061c1d0893a9078",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "2bc73a5c324e09d99965fbcae2d9772e57bd1b5318a0a04b7a98eee04ba95eac"
+    },
+    "WARP_CODEC": {
+      "sourceFiles": {
+        "WARP_CODEC.glsl": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067"
+      },
+      "bodySha256": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067"
+    },
+    "FS_WARP_FIELD": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "WARP_CODEC.glsl": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067",
+        "FS_WARP_FIELD.body.glsl": "9c489863a4b016335557d78b8fb840a24d579886fa6a46a11d74959dda68303a"
+      },
+      "bodySha256": "222107cbe3254bdd484527cdd7bc68fb32f8220a18442f82c9ec8cdc7526071f",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "222107cbe3254bdd484527cdd7bc68fb32f8220a18442f82c9ec8cdc7526071f",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "6c4258e90ea58041776965c416d4d083cf21f00efcb2eba4a70a915215c7eba4"
+    },
+    "FS_WARP_BLUR": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "WARP_CODEC.glsl": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067",
+        "FS_WARP_BLUR.body.glsl": "1dfda95e5600edbf9375a992219e748ea1504384c6e7496c7433d988119de43a"
+      },
+      "bodySha256": "79e4a1c5e17f9fa11cf3fcc41f76f390c38a58a2d0c4ac505877eb776f436e02",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "79e4a1c5e17f9fa11cf3fcc41f76f390c38a58a2d0c4ac505877eb776f436e02",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "602b8d5e25ea4b3b17911f29e320481d64cfb7f351198126ef20d82629b9c445"
+    },
+    "FS_WARP_APPLY": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "WARP_CODEC.glsl": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067",
+        "FS_WARP_APPLY.body.glsl": "d2913f5d25295fae3f80e9f29b5952c5ccd2185473a50ad4784efa629a779381"
+      },
+      "bodySha256": "535beeb7d55e376f06668d3785d6dedda4444324248c11bd7cfd1080ac77888a",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "535beeb7d55e376f06668d3785d6dedda4444324248c11bd7cfd1080ac77888a",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "0382708299a815cc95a649511c7ac2b822576a790c6287419d54a0fe4503205d"
+    },
+    "FS_LAYER": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LAYER.body.glsl": "e32120cc69592ab07aae48a199430fccd6d2e7a10d33970ec8b8a6ca135c6878"
+      },
+      "bodySha256": "1d8291e453745c3d5651a4e90839c3affb1a633c81f612cbf5d19e088a3c964e",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "1d8291e453745c3d5651a4e90839c3affb1a633c81f612cbf5d19e088a3c964e",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "37751016d38db96123b0b4fb74b8db60c0e374565ff8b94ba0194e347754a6c3"
+    },
+    "VS_LIP": {
+      "sourceFiles": {
+        "VS_LIP.glsl": "6b11655acf279fa959d8f5edd6493fd9c795912cc06f8671dadfebadd2e2521e"
+      },
+      "bodySha256": "6b11655acf279fa959d8f5edd6493fd9c795912cc06f8671dadfebadd2e2521e",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "6b11655acf279fa959d8f5edd6493fd9c795912cc06f8671dadfebadd2e2521e",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "d35c24ebed49e2de2661a4551f99265d1f579bf40e43b64f96e9752393aaad6e"
+    },
+    "FS_LIP": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LIP.body.glsl": "fdac50e6cb6914b134543a2fba45ccdd0077657b843d89e698967ae02a830345"
+      },
+      "bodySha256": "f7247900330702f463e7e1d560377a102189f183b59d1db92ff2150b68689bf0",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "f7247900330702f463e7e1d560377a102189f183b59d1db92ff2150b68689bf0",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "e9e3c7edde5c016a80bf35eff3296441cc8e5260ade134c6694115de11845d8d"
+    },
+    "VS_POS": {
+      "sourceFiles": {
+        "VS_POS.glsl": "19e9973582044b2d9ff15495d2835446a824c22717da8daec9e39f6a48b22b85"
+      },
+      "bodySha256": "19e9973582044b2d9ff15495d2835446a824c22717da8daec9e39f6a48b22b85",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "19e9973582044b2d9ff15495d2835446a824c22717da8daec9e39f6a48b22b85",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "29043f547c436bfdf2138e1b935165a60b9270a7704c64dba8fa7beef2950ce0"
+    },
+    "FS_CONST": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_CONST.body.glsl": "b2f68a44650e4fd9d767840092e67a26d7cc5a6793bf8d8544859419d3e9e02f"
+      },
+      "bodySha256": "c992606483653501cf8331a78bdc94287c3cdf3bed4e9f3a3365b365cd923683",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "c992606483653501cf8331a78bdc94287c3cdf3bed4e9f3a3365b365cd923683",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "0dc3e960ecad83bc229e8382cc240b9370942b5856c61341d7a0d5c3cf698ee6"
+    },
+    "FS_GAUSS9_R": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_GAUSS9_R.body.glsl": "f7a3925b2894db5720d7e29a82fe2257c055222c50ac44814fcb2ad0e6e9adfa"
+      },
+      "bodySha256": "fc85889d882fadd26b04c8e278f49489d3c11c1910577bd10806663b3056c64c",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "fc85889d882fadd26b04c8e278f49489d3c11c1910577bd10806663b3056c64c",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "61505e1abd6f1d5735e766dc5949378026a0d46db2341002aa36629e91c7417b"
+    },
+    "FS_LIP_MASK": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LIP_MASK.body.glsl": "a65ec664ee1ffa7b6acdd9dde68270e9315e54eb2e3ccb290b0c065cfd24195d"
+      },
+      "bodySha256": "2d745c8b6c06b795e60f33702bfe1d6404c4f09b97bbf484d0cfb2d119387e7a",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "2d745c8b6c06b795e60f33702bfe1d6404c4f09b97bbf484d0cfb2d119387e7a",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "48c3e9e39a64d3efa8fd89868fb189e3eccf1f5e73ded8986795e09af7f9cf8e"
+    },
+    "FS_CROP": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_CROP.body.glsl": "bb80d6f74f3938aea8cd24aea3260e2f853a6770f4937fbc17ec4870a4b7ef9a"
+      },
+      "bodySha256": "641b00ad695ab1fa5d79cd397f1371d7120457bdcae97dbea4fbfd810ffe7df2",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "641b00ad695ab1fa5d79cd397f1371d7120457bdcae97dbea4fbfd810ffe7df2",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "2eccbc8d1ed9c0bf01e38fc813d0ea489eb0853815720cc916a9061d189be3d6"
+    },
+    "FS_SHIFT_COMPOSITE": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_SHIFT_COMPOSITE.body.glsl": "d5bb9b3ab9d738d2bffafbe8d5be08a2db302a7cd85fe64fdb7ff0c018eb3234"
+      },
+      "bodySha256": "e39df4a90f01b6fc53d43b4dd3f47fcd9d3f66777bbf5f0db84ad9028e46c9ff",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "e39df4a90f01b6fc53d43b4dd3f47fcd9d3f66777bbf5f0db84ad9028e46c9ff",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "9a3636e267224574a9fe97d100b2ca3550414b92a2c317925c8378c28fc5d2a5"
+    },
+    "FS_LUT": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LUT.body.glsl": "4f0897d19e488a94ebd49512996f16bd1927afa86fb336c389f2d95ea2c2c54c"
+      },
+      "bodySha256": "2ade5638bab8c7c31f4c7c7cbb4e8ad127b3b619a10f674b94e4643787886aae",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "2ade5638bab8c7c31f4c7c7cbb4e8ad127b3b619a10f674b94e4643787886aae",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "290298042eed71229793dddd212c7a12691c1161639bc4ad849abdd2ab041287"
+    },
+    "FS_DETAIL": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_DETAIL.body.glsl": "20d83578461dabd3179f1d98f3fbf0668873c637a72e416c22d248560de00009"
+      },
+      "bodySha256": "53a10aa4e170c42fee29f9af67c96c90be9ddc3c9e7ac9d92328d80abe06f105",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "53a10aa4e170c42fee29f9af67c96c90be9ddc3c9e7ac9d92328d80abe06f105",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "731676b2318f5b114bd43c5bf450c2f11d9c3809f0f3344d3425a152d6962010"
+    },
+    "FS_BLUR4": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_BLUR4.body.glsl": "8a3139e71457c3bb1c48c28b16fe24a6e54f28a5d87efdd554cacc5336833256"
+      },
+      "bodySha256": "20394269022715767182fc790c30a7fbdc2a9c6c2cedfb9e52a30c6c4b89379f",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "20394269022715767182fc790c30a7fbdc2a9c6c2cedfb9e52a30c6c4b89379f",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "4de71d436efb256cdbbdd8523578678afe9c3e3fa2da7d797cea6bd6ab98e34a"
+    },
+    "FS_BLEMISH_PACK": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_BLEMISH_PACK.body.glsl": "0d6a2baa0aa8cbf46e57d92e06d96aa692072be692a83e2ba8c3df7034792561"
+      },
+      "bodySha256": "54ee7a8a517c21532f296118e7359c97c6b797b203bd9d6fd27c41a20cf79c8d",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "54ee7a8a517c21532f296118e7359c97c6b797b203bd9d6fd27c41a20cf79c8d",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "0e38b15f5fee04713f21aec36c743d347ae0cae9ebe4b7b99722db18b0ca389c"
+    },
+    "FS_BLEMISH_DETECT": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_BLEMISH_DETECT.body.glsl": "f668de74e5421739f31f5aa22ac7bb6b2888c9db9b6b4e54f68a543066a367a4"
+      },
+      "bodySha256": "30daffb86f15710d482d43153abac1c4a98056d422a9c5cac81ff46851aa72ce",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "30daffb86f15710d482d43153abac1c4a98056d422a9c5cac81ff46851aa72ce",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "56da6e4488c6ae9220ec886cd1de8a7a8af137aaa35e7c1cf6fa65b5777a8f98"
+    },
+    "FS_BLEMISH_APPLY": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_BLEMISH_APPLY.body.glsl": "22fcc7f4b42489ab5862ce3757e06bdbacfa7b3923684b86ac8de65e9a068dec"
+      },
+      "bodySha256": "e7b37c3b144b46f8fa5f19ac8d43df2bbf1323669aa1e10a7d3668623b10cbaa",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "e7b37c3b144b46f8fa5f19ac8d43df2bbf1323669aa1e10a7d3668623b10cbaa",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "89faabb6d125a75b6c905a016dffebfe5e09f734e26c148179586a57ee5afc65"
+    },
+    "FS_FOREHEAD": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_FOREHEAD.body.glsl": "abadda49ef5e8e1586a7f2a3835a7bf116f1f34e61b16acaefffc004fd961641"
+      },
+      "bodySha256": "3c49055838e3a264361aba143d6a1291778aa1a99b6aa5cf183c7c8c367c2e94",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "3c49055838e3a264361aba143d6a1291778aa1a99b6aa5cf183c7c8c367c2e94",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "e092e38c02b613478a1ec127278b06a9d773a5b0ef8cf18e0cc8b94447c174e7"
+    },
+    "FS_LICENSE": {
+      "sourceFiles": {
+        "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+        "FS_LICENSE.body.glsl": "60fe68da2ca0d24d579671d0faaa40cede10ccd2f76db8324bc6c1e159829e3f"
+      },
+      "bodySha256": "539f7caf69e0a96629a0b660eaceef9194d2f265f36a5b5862e65b1a121b4323",
+      "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
+      "glslSha256": "539f7caf69e0a96629a0b660eaceef9194d2f265f36a5b5862e65b1a121b4323",
+      "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
+      "mslSha256": "5927ea65a3e7360730ce2e43da0521f8b2f047b6f827f8669e62357d3b4d3dfd"
+    }
+  },
+  "bindings": {
+    "VS_FULL": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec2",
+          "index": 0
+        }
+      ]
+    },
+    "FS_COPY": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_BEAUTY": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uPx",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "name": "uMix",
+          "type": "vec2",
+          "offset": 8,
+          "bytes": 8
+        },
+        {
+          "name": "uUseMask",
+          "type": "float",
+          "offset": 16,
+          "bytes": 4
+        },
+        {
+          "name": "uNoFace",
+          "type": "float",
+          "offset": 20,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 24,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uMask",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "FS_LOCAL": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uAmt",
+          "type": "vec4",
+          "offset": 0,
+          "bytes": 16
+        },
+        {
+          "name": "uEyeStep",
+          "type": "vec2",
+          "offset": 16,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 32,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uMask1",
+          "index": 1
+        },
+        {
+          "name": "uMask2",
+          "index": 2
+        },
+        {
+          "name": "uSmall",
+          "index": 3
+        },
+        {
+          "name": "uSmallBlur",
+          "index": 4
+        },
+        {
+          "name": "uThreeCurve",
+          "index": 5
+        }
+      ],
+      "attributes": []
+    },
+    "FS_GF_VAR": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uSmall",
+          "index": 0
+        },
+        {
+          "name": "uMean",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "FS_GF_APPLY": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uK",
+          "type": "float",
+          "offset": 0,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 4,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uBase",
+          "index": 0
+        },
+        {
+          "name": "uSrc",
+          "index": 1
+        },
+        {
+          "name": "uMean",
+          "index": 2
+        },
+        {
+          "name": "uVar",
+          "index": 3
+        },
+        {
+          "name": "uMask",
+          "index": 4
+        }
+      ],
+      "attributes": []
+    },
+    "FS_GAUSS": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uDir",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 8,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_COLOR": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uPx",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "name": "uAmount",
+          "type": "vec4",
+          "offset": 16,
+          "bytes": 16
+        }
+      ],
+      "uniformBytes": 32,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uOrig",
+          "index": 1
+        },
+        {
+          "name": "uRedLut",
+          "index": 2
+        },
+        {
+          "name": "uWhiteLut",
+          "index": 3
+        },
+        {
+          "name": "uClarityLut",
+          "index": 4
+        }
+      ],
+      "attributes": []
+    },
+    "VS_LAYER": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec2",
+          "index": 0
+        },
+        {
+          "name": "aUv",
+          "type": "vec2",
+          "index": 1
+        }
+      ]
+    },
+    "VS_LAYER3": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec3",
+          "index": 0
+        },
+        {
+          "name": "aUv",
+          "type": "vec2",
+          "index": 1
+        }
+      ]
+    },
+    "VS_WARP_FIELD": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vOff",
+          "type": "vec2",
+          "location": 2
+        }
+      ],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec3",
+          "index": 0
+        },
+        {
+          "name": "aOff",
+          "type": "vec2",
+          "index": 1
+        }
+      ]
+    },
+    "FS_WARP_FIELD": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vOff",
+          "type": "vec2",
+          "location": 2
+        }
+      ],
+      "textures": [],
+      "attributes": []
+    },
+    "FS_WARP_BLUR": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uStep",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 8,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_WARP_APPLY": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uField",
+          "index": 1
+        },
+        {
+          "name": "uField2",
+          "index": 2
+        }
+      ],
+      "attributes": []
+    },
+    "FS_LAYER": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uAlpha",
+          "type": "float",
+          "offset": 0,
+          "bytes": 4
+        },
+        {
+          "name": "uMode",
+          "type": "float",
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 8,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "VS_LIP": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        },
+        {
+          "name": "vA",
+          "type": "float",
+          "location": 0
+        },
+        {
+          "name": "vMaskUv",
+          "type": "vec2",
+          "location": 1
+        }
+      ],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec2",
+          "index": 0
+        },
+        {
+          "name": "aA",
+          "type": "float",
+          "index": 1
+        },
+        {
+          "name": "aMaskUv",
+          "type": "vec2",
+          "index": 2
+        }
+      ]
+    },
+    "FS_LIP": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uColor",
+          "type": "vec3",
+          "offset": 0,
+          "bytes": 16
+        },
+        {
+          "name": "uAlpha",
+          "type": "float",
+          "offset": 16,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 32,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        },
+        {
+          "name": "vA",
+          "type": "float",
+          "location": 0
+        },
+        {
+          "name": "vMaskUv",
+          "type": "vec2",
+          "location": 1
+        }
+      ],
+      "textures": [
+        {
+          "name": "uSrc",
+          "index": 0
+        },
+        {
+          "name": "uLipMask",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "VS_POS": {
+      "stage": "vertex",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [],
+      "textures": [],
+      "attributes": [
+        {
+          "name": "aPos",
+          "type": "vec2",
+          "index": 0
+        }
+      ]
+    },
+    "FS_CONST": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uV",
+          "type": "float",
+          "offset": 0,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 4,
+      "varyings": [],
+      "textures": [],
+      "attributes": []
+    },
+    "FS_GAUSS9_R": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uStep",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 8,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_LIP_MASK": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vA",
+          "type": "float",
+          "location": 0
+        },
+        {
+          "name": "vMaskUv",
+          "type": "vec2",
+          "location": 1
+        }
+      ],
+      "textures": [
+        {
+          "name": "uLipMask",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_CROP": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uFrame",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "name": "uCenter",
+          "type": "vec2",
+          "offset": 8,
+          "bytes": 8
+        },
+        {
+          "name": "uAxisX",
+          "type": "vec2",
+          "offset": 16,
+          "bytes": 8
+        },
+        {
+          "name": "uAxisY",
+          "type": "vec2",
+          "offset": 24,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 32,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_SHIFT_COMPOSITE": {
+      "stage": "fragment",
+      "uniforms": [],
+      "uniformBytes": 0,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uShift",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "FS_LUT": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uStrength",
+          "type": "float",
+          "offset": 0,
+          "bytes": 4
+        },
+        {
+          "name": "uStrip",
+          "type": "float",
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "name": "uScale",
+          "type": "float",
+          "offset": 8,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 12,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uLut",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "FS_DETAIL": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uFrameStep",
+          "type": "vec4",
+          "offset": 0,
+          "bytes": 16
+        },
+        {
+          "name": "uMeanR",
+          "type": "float",
+          "offset": 16,
+          "bytes": 4
+        },
+        {
+          "name": "uAmtA",
+          "type": "vec4",
+          "offset": 32,
+          "bytes": 16
+        },
+        {
+          "name": "uAmtB",
+          "type": "vec4",
+          "offset": 48,
+          "bytes": 16
+        },
+        {
+          "name": "uIrisA",
+          "type": "vec4",
+          "offset": 64,
+          "bytes": 16
+        },
+        {
+          "name": "uIrisB",
+          "type": "vec4",
+          "offset": 80,
+          "bytes": 16
+        },
+        {
+          "name": "uTeeth",
+          "type": "vec4",
+          "offset": 96,
+          "bytes": 16
+        },
+        {
+          "name": "uPouchA",
+          "type": "vec4",
+          "offset": 112,
+          "bytes": 16
+        },
+        {
+          "name": "uPouchB",
+          "type": "vec4",
+          "offset": 128,
+          "bytes": 16
+        },
+        {
+          "name": "uFoldA",
+          "type": "vec4",
+          "offset": 144,
+          "bytes": 16
+        },
+        {
+          "name": "uFoldB",
+          "type": "vec4",
+          "offset": 160,
+          "bytes": 16
+        },
+        {
+          "name": "uNose",
+          "type": "vec4",
+          "offset": 176,
+          "bytes": 16
+        },
+        {
+          "name": "uShadeA",
+          "type": "vec4",
+          "offset": 192,
+          "bytes": 16
+        },
+        {
+          "name": "uShadeB",
+          "type": "vec4",
+          "offset": 208,
+          "bytes": 16
+        },
+        {
+          "name": "uRadii",
+          "type": "vec4",
+          "offset": 224,
+          "bytes": 16
+        },
+        {
+          "name": "uToothBox",
+          "type": "vec4",
+          "offset": 240,
+          "bytes": 16
+        },
+        {
+          "name": "uToothFit",
+          "type": "float",
+          "offset": 256,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 272,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uToothMask",
+          "index": 1
+        },
+        {
+          "name": "uToothLut",
+          "index": 2
+        }
+      ],
+      "attributes": []
+    },
+    "FS_BLUR4": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uStep",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        }
+      ],
+      "uniformBytes": 8,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    },
+    "FS_BLEMISH_PACK": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uMode",
+          "type": "vec4",
+          "offset": 0,
+          "bytes": 16
+        }
+      ],
+      "uniformBytes": 16,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uSkin",
+          "index": 1
+        },
+        {
+          "name": "uSpotA",
+          "index": 2
+        },
+        {
+          "name": "uSpotB",
+          "index": 3
+        }
+      ],
+      "attributes": []
+    },
+    "FS_BLEMISH_DETECT": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uK",
+          "type": "vec4",
+          "offset": 0,
+          "bytes": 16
+        },
+        {
+          "name": "uDark",
+          "type": "vec2",
+          "offset": 16,
+          "bytes": 8
+        },
+        {
+          "name": "uCore",
+          "type": "vec2",
+          "offset": 24,
+          "bytes": 8
+        },
+        {
+          "name": "uSat",
+          "type": "vec3",
+          "offset": 32,
+          "bytes": 16
+        }
+      ],
+      "uniformBytes": 48,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uBg",
+          "index": 1
+        },
+        {
+          "name": "uSkin",
+          "index": 2
+        }
+      ],
+      "attributes": []
+    },
+    "FS_BLEMISH_APPLY": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uProtectK",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "name": "uAmt",
+          "type": "vec4",
+          "offset": 16,
+          "bytes": 16
+        },
+        {
+          "name": "uRedFade",
+          "type": "float",
+          "offset": 32,
+          "bytes": 4
+        },
+        {
+          "name": "uMaxLift",
+          "type": "float",
+          "offset": 36,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 48,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uHalf",
+          "index": 1
+        },
+        {
+          "name": "uClean",
+          "index": 2
+        },
+        {
+          "name": "uScore",
+          "index": 3
+        },
+        {
+          "name": "uSpotA",
+          "index": 4
+        },
+        {
+          "name": "uWide",
+          "index": 5
+        },
+        {
+          "name": "uSpotB",
+          "index": 6
+        },
+        {
+          "name": "uRed",
+          "index": 7
+        },
+        {
+          "name": "uSkin",
+          "index": 8
+        },
+        {
+          "name": "uProtect",
+          "index": 9
+        }
+      ],
+      "attributes": []
+    },
+    "FS_FOREHEAD": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uStep",
+          "type": "vec2",
+          "offset": 0,
+          "bytes": 8
+        },
+        {
+          "name": "uRef",
+          "type": "vec2",
+          "offset": 8,
+          "bytes": 8
+        },
+        {
+          "name": "uK",
+          "type": "vec4",
+          "offset": 16,
+          "bytes": 16
+        },
+        {
+          "name": "uPx",
+          "type": "vec2",
+          "offset": 32,
+          "bytes": 8
+        },
+        {
+          "name": "uDetail",
+          "type": "float",
+          "offset": 40,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 48,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        },
+        {
+          "name": "uMask",
+          "index": 1
+        }
+      ],
+      "attributes": []
+    },
+    "FS_LICENSE": {
+      "stage": "fragment",
+      "uniforms": [
+        {
+          "name": "uPhase",
+          "type": "float",
+          "offset": 0,
+          "bytes": 4
+        }
+      ],
+      "uniformBytes": 4,
+      "varyings": [
+        {
+          "name": "vUv",
+          "type": "vec2",
+          "location": 3
+        }
+      ],
+      "textures": [
+        {
+          "name": "uTex",
+          "index": 0
+        }
+      ],
+      "attributes": []
+    }
+  }
+}

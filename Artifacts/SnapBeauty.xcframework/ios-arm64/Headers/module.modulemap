@@ -1,0 +1,4 @@
+module SnapBeauty {
+    header "SnapBeauty.h"
+    export *
+}

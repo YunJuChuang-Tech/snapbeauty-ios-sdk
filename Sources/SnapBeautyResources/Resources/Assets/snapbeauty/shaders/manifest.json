@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "programs": {
+    "PRECISION": [
+      "PRECISION.glsl"
+    ],
+    "VS_FULL": [
+      "VS_FULL.glsl"
+    ],
+    "FS_COPY": [
+      "PRECISION.glsl",
+      "FS_COPY.body.glsl"
+    ],
+    "FS_BEAUTY": [
+      "PRECISION.glsl",
+      "FS_BEAUTY.body.glsl"
+    ],
+    "FS_LOCAL": [
+      "PRECISION.glsl",
+      "FS_LOCAL.body.glsl"
+    ],
+    "FS_GF_VAR": [
+      "PRECISION.glsl",
+      "FS_GF_VAR.body.glsl"
+    ],
+    "FS_GF_APPLY": [
+      "PRECISION.glsl",
+      "FS_GF_APPLY.body.glsl"
+    ],
+    "FS_GAUSS": [
+      "PRECISION.glsl",
+      "FS_GAUSS.body.glsl"
+    ],
+    "FS_COLOR": [
+      "PRECISION.glsl",
+      "FS_COLOR.body.glsl"
+    ],
+    "VS_LAYER": [
+      "VS_LAYER.glsl"
+    ],
+    "VS_LAYER3": [
+      "VS_LAYER3.glsl"
+    ],
+    "VS_WARP_FIELD": [
+      "VS_WARP_FIELD.glsl"
+    ],
+    "WARP_CODEC": [
+      "WARP_CODEC.glsl"
+    ],
+    "FS_WARP_FIELD": [
+      "PRECISION.glsl",
+      "WARP_CODEC.glsl",
+      "FS_WARP_FIELD.body.glsl"
+    ],
+    "FS_WARP_BLUR": [
+      "PRECISION.glsl",
+      "WARP_CODEC.glsl",
+      "FS_WARP_BLUR.body.glsl"
+    ],
+    "FS_WARP_APPLY": [
+      "PRECISION.glsl",
+      "WARP_CODEC.glsl",
+      "FS_WARP_APPLY.body.glsl"
+    ],
+    "FS_LAYER": [
+      "PRECISION.glsl",
+      "FS_LAYER.body.glsl"
+    ],
+    "VS_LIP": [
+      "VS_LIP.glsl"
+    ],
+    "FS_LIP": [
+      "PRECISION.glsl",
+      "FS_LIP.body.glsl"
+    ],
+    "VS_POS": [
+      "VS_POS.glsl"
+    ],
+    "FS_CONST": [
+      "PRECISION.glsl",
+      "FS_CONST.body.glsl"
+    ],
+    "FS_GAUSS9_R": [
+      "PRECISION.glsl",
+      "FS_GAUSS9_R.body.glsl"
+    ],
+    "FS_LIP_MASK": [
+      "PRECISION.glsl",
+      "FS_LIP_MASK.body.glsl"
+    ],
+    "FS_CROP": [
+      "PRECISION.glsl",
+      "FS_CROP.body.glsl"
+    ],
+    "FS_SHIFT_COMPOSITE": [
+      "PRECISION.glsl",
+      "FS_SHIFT_COMPOSITE.body.glsl"
+    ],
+    "FS_LUT": [
+      "PRECISION.glsl",
+      "FS_LUT.body.glsl"
+    ],
+    "FS_DETAIL": [
+      "PRECISION.glsl",
+      "FS_DETAIL.body.glsl"
+    ],
+    "FS_BLUR4": [
+      "PRECISION.glsl",
+      "FS_BLUR4.body.glsl"
+    ],
+    "FS_BLEMISH_PACK": [
+      "PRECISION.glsl",
+      "FS_BLEMISH_PACK.body.glsl"
+    ],
+    "FS_BLEMISH_DETECT": [
+      "PRECISION.glsl",
+      "FS_BLEMISH_DETECT.body.glsl"
+    ],
+    "FS_BLEMISH_APPLY": [
+      "PRECISION.glsl",
+      "FS_BLEMISH_APPLY.body.glsl"
+    ],
+    "FS_FOREHEAD": [
+      "PRECISION.glsl",
+      "FS_FOREHEAD.body.glsl"
+    ],
+    "FS_LICENSE": [
+      "PRECISION.glsl",
+      "FS_LICENSE.body.glsl"
+    ]
+  },
+  "sha256": {
+    "PRECISION": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
+    "VS_FULL": "82f57306220bf1de6f73d042d8df00263ebf87a130a67d0e9b84946c92b55a46",
+    "FS_COPY": "8c3fcfb2df27e96dbd3fed5b98c37ceff5a8b7810eb83e3d2d1f7e297136db76",
+    "FS_BEAUTY": "e5f90b0c2b4f8b8f1448ebc4c091eee2caa607303010f003465b8e9cf56e4af8",
+    "FS_LOCAL": "4fed143bf132dba752c655d43fbfc439cd4b63ac84fc90de626d8fa4002d7dc0",
+    "FS_GF_VAR": "68180bbe37e1218dde0a66e9be64d90c47e28042a347920a2e671455f18a3dd2",
+    "FS_GF_APPLY": "5afdc80766d03f4fb2178cfbbb54a1b5195d73d2ef44a21993e1210dfb9cc885",
+    "FS_GAUSS": "1b2b38dff3d59a19cd4a8a78c5a425c5536a5f4ad7f9705db18bed64fcb841c9",
+    "FS_COLOR": "f569b696961fc17000720474f71c33b1bbb29ccaebd1607757ed46090501e86f",
+    "VS_LAYER": "c3b04200223b9c0196b97b131730c7df0aed001de414987243b4e04113cd55f2",
+    "VS_LAYER3": "c054d99111adcb8ed58971451b5430fc176cd18424b88e125f06b9bd0c3e7db9",
+    "VS_WARP_FIELD": "edb46846b19d6f85451a1f8573786dba398d023861396a51d061c1d0893a9078",
+    "WARP_CODEC": "968ceb541aac1411c17490b8742e899793b772f0e2412ec51c7aa7496685a067",
+    "FS_WARP_FIELD": "222107cbe3254bdd484527cdd7bc68fb32f8220a18442f82c9ec8cdc7526071f",
+    "FS_WARP_BLUR": "79e4a1c5e17f9fa11cf3fcc41f76f390c38a58a2d0c4ac505877eb776f436e02",
+    "FS_WARP_APPLY": "535beeb7d55e376f06668d3785d6dedda4444324248c11bd7cfd1080ac77888a",
+    "FS_LAYER": "1d8291e453745c3d5651a4e90839c3affb1a633c81f612cbf5d19e088a3c964e",
+    "VS_LIP": "6b11655acf279fa959d8f5edd6493fd9c795912cc06f8671dadfebadd2e2521e",
+    "FS_LIP": "f7247900330702f463e7e1d560377a102189f183b59d1db92ff2150b68689bf0",
+    "VS_POS": "19e9973582044b2d9ff15495d2835446a824c22717da8daec9e39f6a48b22b85",
+    "FS_CONST": "c992606483653501cf8331a78bdc94287c3cdf3bed4e9f3a3365b365cd923683",
+    "FS_GAUSS9_R": "fc85889d882fadd26b04c8e278f49489d3c11c1910577bd10806663b3056c64c",
+    "FS_LIP_MASK": "2d745c8b6c06b795e60f33702bfe1d6404c4f09b97bbf484d0cfb2d119387e7a",
+    "FS_CROP": "641b00ad695ab1fa5d79cd397f1371d7120457bdcae97dbea4fbfd810ffe7df2",
+    "FS_SHIFT_COMPOSITE": "e39df4a90f01b6fc53d43b4dd3f47fcd9d3f66777bbf5f0db84ad9028e46c9ff",
+    "FS_LUT": "2ade5638bab8c7c31f4c7c7cbb4e8ad127b3b619a10f674b94e4643787886aae",
+    "FS_DETAIL": "53a10aa4e170c42fee29f9af67c96c90be9ddc3c9e7ac9d92328d80abe06f105",
+    "FS_BLUR4": "20394269022715767182fc790c30a7fbdc2a9c6c2cedfb9e52a30c6c4b89379f",
+    "FS_BLEMISH_PACK": "54ee7a8a517c21532f296118e7359c97c6b797b203bd9d6fd27c41a20cf79c8d",
+    "FS_BLEMISH_DETECT": "30daffb86f15710d482d43153abac1c4a98056d422a9c5cac81ff46851aa72ce",
+    "FS_BLEMISH_APPLY": "e7b37c3b144b46f8fa5f19ac8d43df2bbf1323669aa1e10a7d3668623b10cbaa",
+    "FS_FOREHEAD": "3c49055838e3a264361aba143d6a1291778aa1a99b6aa5cf183c7c8c367c2e94",
+    "FS_LICENSE": "539f7caf69e0a96629a0b660eaceef9194d2f265f36a5b5862e65b1a121b4323"
+  }
+}
