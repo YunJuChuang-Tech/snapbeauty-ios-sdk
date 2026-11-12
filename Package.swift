@@ -6,6 +6,6 @@ let package = Package(
     products: [.library(name: "SnapBeautySDK", targets: ["SnapBeauty", "SnapBeautyResources"])],
     targets: [
         .binaryTarget(name: "SnapBeauty", path: "Artifacts/SnapBeauty.xcframework"),
-        .target(name: "SnapBeautyResources", resources: [.copy("Resources/Assets"), .copy("Resources/Shaders"), .copy("Resources/ShadersSimulator")], linkerSettings: [.linkedLibrary("c++"), .linkedLibrary("z"), .linkedFramework("Metal"), .linkedFramework("CoreVideo"), .linkedFramework("ImageIO"), .linkedFramework("CoreGraphics")])
+        .target(name: "SnapBeautyResources", dependencies: ["SnapBeauty"], resources: [.copy("Resources/Assets"), .copy("Resources/Shaders"), .copy("Resources/ShadersSimulator")], linkerSettings: [.linkedLibrary("c++"), .linkedLibrary("z"), .linkedFramework("Metal"), .linkedFramework("CoreVideo"), .linkedFramework("ImageIO"), .linkedFramework("CoreGraphics")])
     ]
 )

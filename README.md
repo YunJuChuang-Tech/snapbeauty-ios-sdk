@@ -11,17 +11,14 @@ import SnapBeauty
 import SnapBeautyResources
 
 let status = SnapBeauty.initialize(license: licenseText)
-let engine = try SnapBeautyEngine(
-    assetsPath: SnapBeautyResources.assets.path,
-    shadersPath: SnapBeautyResources.shaders.path
-)
+let engine = try SnapBeautyResources.makeEngine()
 ```
 
 Initialize a valid license before creating an engine. Missing or invalid authorization returns the original image without effects. Use one engine on one queue.
 
 ## Host makeup resources
 
-The SDK does not contain makeup textures or lip colors. To use host-owned makeup, provide `makeup/<layer>/<layer>_NN.webp` (layers: `blush`, `eyeshadow`, `eyebrow`) and `makeup/lip/lip_NN.json`. Copy the SDK `Assets` directory to an app-owned writable directory, add the host `makeup` directory alongside `snapbeauty`, and pass the combined directory as `assetsPath`. The sample project validates its host-provided files and follows this arrangement. Choose and manage the destination's lifecycle in the app; never modify the signed package resource bundle.
+The SDK does not contain makeup textures or lip colors. To use host-owned makeup, provide `makeup/<layer>/<layer>_NN.webp` (layers: `blush`, `eyeshadow`, `eyebrow`) and `makeup/lip/lip_NN.json`. Copy the SDK `Assets` directory to an app-owned writable directory, add the host `makeup` directory alongside `snapbeauty`, and pass it as `SnapBeautyResources.makeEngine(assets: combinedAssetsURL)`. The sample project validates its host-provided files and follows this arrangement. Choose and manage the destination's lifecycle in the app; never modify the signed package resource bundle.
 
 ## License
 
