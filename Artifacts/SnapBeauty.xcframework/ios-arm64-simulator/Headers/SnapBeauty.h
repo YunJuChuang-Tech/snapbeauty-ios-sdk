@@ -1,4 +1,4 @@
-// snapbeauty iOS SDK public interface (Objective-C; imported as Swift module `SnapBeauty`).
+// SnapBeauty iOS SDK public interface (Objective-C; imported as Swift module `SnapBeauty`).
 // Not thread-safe: use one engine from one queue.
 #import <Foundation/Foundation.h>
 #import <CoreVideo/CoreVideo.h>
