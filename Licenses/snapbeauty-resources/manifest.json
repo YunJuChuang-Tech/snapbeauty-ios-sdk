@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "description": "Open-licensed LUTs resampled, quantized and adjusted with six global color parameters.",
+  "licenses": {
+    "CC-BY-4.0": {
+      "sourcePath": "resources/licenses/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "files": [
+    {
+      "target": "bright1",
+      "baseSource": "color-grading/Q-DDL_Pack_9/Horn.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "cc560dd94e1086b7d51b88d809a68e2915fcb389badf5ae24ebc4486aa20c986"
+    },
+    {
+      "target": "bright2",
+      "baseSource": "film-simulation/Q-DDL_Pack_14/Oconnor.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "9868789d6872265ab7dd3d40697c74dbdadaa5e1da96541b1a19bb65b049d28f"
+    },
+    {
+      "target": "bright4",
+      "baseSource": "color-moods/Q-DDL_Pack_20/Case.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "58626e79886f8e0d26ec142197bcdd28a7bf239fc61b968be9c1d46221adb5cf"
+    },
+    {
+      "target": "rose1",
+      "baseSource": "color-moods/Q-DDL_Pack_16/Stewart.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "66a43d75b8b91d21e8c3b7fd8dd333d30d6492b59e404aad9625095d9cf61d1f"
+    },
+    {
+      "target": "rose2",
+      "baseSource": "cinematic/Q-DDL_Pack_3/French.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "e6ee38916bdeb9912730d86d83d35751d9e36b8b08ae0f8014e87aa10293b294"
+    },
+    {
+      "target": "rose7",
+      "baseSource": "cinematic/Q-DDL_Pack_4/Alexander.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "eba9da01670d38eea593606f11c5b01a6a2bbbf435666bd8cb00d856aa86152c"
+    },
+    {
+      "target": "rose8",
+      "baseSource": "film-simulation/Q-DDL_Pack_14/Sweeney.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "defe84baeb429007710a4d3e623bbd1612d2a1c1b3cb4dc2193e59f5533a7c51"
+    },
+    {
+      "target": "stylized5",
+      "baseSource": "cinematic/Q-DDL_Pack_5/Dodson.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "dd63372694b1adcc7a7a61f3372ddbbadd7a25da7fb879c74313be845174fb00"
+    },
+    {
+      "target": "cool1",
+      "baseSource": "film-simulation/Q-DDL_Pack_15/Ritter.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "b62d88cd2cf6beb8aa10daa09e28888dfea621aedbe966d72500ce30b898f077"
+    },
+    {
+      "target": "cool11",
+      "baseSource": "film-simulation/Q-DDL_Pack_14/Navarro.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "544b43b23f9731a8db8b8f7d25997dd722c7a6a03ac480a67006785cf890de2e"
+    },
+    {
+      "target": "cool4",
+      "baseSource": "color-grading/Q-DDL_Pack_8/Leonard.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "618289c1d3d7fdad967d69f1bff6ff179540bc87b3c224fe720c8ec66703b28c"
+    },
+    {
+      "target": "peach1",
+      "baseSource": "color-moods/Q-DDL_Pack_18/Christensen.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "76502a453a43f7d083735e1f943e8c8699f7e3bf37b9f728681ac676b54235cb"
+    },
+    {
+      "target": "peach5",
+      "baseSource": "color-moods/Q-DDL_Pack_17/King.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "fefadf17f7cfb85ff6f2e627387c4909c925c2ca8a731e338e0b36e260b7d8b6"
+    },
+    {
+      "target": "fresh2",
+      "baseSource": "cinematic/Q-DDL_Pack_3/York.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "0608e5b64e187af44483dea1670e9730455665e484ecb2e4e0e711013475ab0e"
+    },
+    {
+      "target": "fresh3",
+      "baseSource": "color-moods/Q-DDL_Pack_20/Pena.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "4ec1e10d829e993968145bbd6b7dcbe90bd9d33d87c2cda468ff281605b1c2d1"
+    },
+    {
+      "target": "muted1",
+      "baseSource": "film-simulation/Q-DDL_Pack_11/Thompson.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "135ad4e4e1bb2453237e3fcdb5f355244406ad2495018c63fb53c2d69c8d3be5"
+    },
+    {
+      "target": "natural1",
+      "baseSource": "color-moods/Q-DDL_Pack_17/Luna.cube",
+      "baseCollection": "Q-DDL",
+      "licenseId": "CC-BY-4.0",
+      "sha256": "d76634a9c0564f059dc2ea904228ceea1828ad299add88eb38098a8c8fd3ae74"
+    }
+  ]
+}

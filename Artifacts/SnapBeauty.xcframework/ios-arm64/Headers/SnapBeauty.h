@@ -4,11 +4,19 @@
 #import <CoreVideo/CoreVideo.h>
 #import <Metal/Metal.h>
 
+// Public symbols stay visible when the library is built with -fvisibility=hidden (macOS dylib).
+// iOS ships a static library, so the marker is empty there and iOS objects are unchanged.
+#if defined(__APPLE__) && TARGET_OS_OSX
+#define SNAPBEAUTY_PUBLIC __attribute__((visibility("default")))
+#else
+#define SNAPBEAUTY_PUBLIC
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSErrorDomain const SnapBeautyErrorDomain;
+FOUNDATION_EXPORT SNAPBEAUTY_PUBLIC NSErrorDomain const SnapBeautyErrorDomain;
 /// Native engine status codes (xm_status), separate from LicenseStatus.code.
-FOUNDATION_EXPORT NSErrorDomain const SnapBeautyEngineErrorDomain;
+FOUNDATION_EXPORT SNAPBEAUTY_PUBLIC NSErrorDomain const SnapBeautyEngineErrorDomain;
 
 typedef NS_ENUM(NSInteger, SnapBeautyLicenseCode) {
     SnapBeautyLicenseValid=0, SnapBeautyLicenseGrace, SnapBeautyLicenseMissing,
@@ -21,7 +29,7 @@ typedef NS_ENUM(NSInteger, SnapBeautyLicenseCode) {
 };
 
 NS_SWIFT_NAME(LicenseStatus)
-@interface SnapBeautyLicenseStatus : NSObject
+SNAPBEAUTY_PUBLIC @interface SnapBeautyLicenseStatus : NSObject
 @property (nonatomic, readonly) SnapBeautyLicenseCode code;
 @property (nonatomic, readonly) int64_t expiresAt; // Unix seconds
 @property (nonatomic, readonly) uint32_t featureBits; // beauty=1, makeup=2, multiface=4
@@ -34,7 +42,11 @@ NS_SWIFT_NAME(LicenseStatus)
 @end
 
 /// Process-wide offline authorization. Call before constructing engines; call again to renew.
-@interface SnapBeauty : NSObject
+/// The License identity is the main bundle identifier (`CFBundleIdentifier`), with platform `ios` on iOS and
+/// `macos` on macOS. A host without a bundle identifier (e.g. a bare command-line tool) cannot be
+/// licensed: with a License present the status code is `SnapBeautyLicenseIdentityError`. Package such
+/// a host as an app bundle.
+SNAPBEAUTY_PUBLIC @interface SnapBeauty : NSObject
 + (SnapBeautyLicenseStatus *)initializeWithLicense:(NSString *)license NS_SWIFT_NAME(initialize(license:));
 + (SnapBeautyLicenseStatus *)licenseStatus;
 /// Main-queue callback once per authorization error transition; nil removes it.
@@ -47,7 +59,7 @@ NS_SWIFT_NAME(LicenseStatus)
 
 /// Skin parameters. 0 turns an effect off; `smoothing` ranges 0-6, the others 0-1.
 NS_SWIFT_NAME(SkinParams)
-@interface SnapBeautySkinParams : NSObject <NSCopying>
+SNAPBEAUTY_PUBLIC @interface SnapBeautySkinParams : NSObject <NSCopying>
 @property (nonatomic) float smoothing; // 磨皮，0–6
 @property (nonatomic) float brightening; // 美白
 @property (nonatomic) float rosiness; // 红润
@@ -63,7 +75,7 @@ NS_SWIFT_NAME(SkinParams)
 
 /// Face shape parameters, 0-1. Bidirectional ones are neutral at 0.5, the rest at 0.
 NS_SWIFT_NAME(FaceParams)
-@interface SnapBeautyFaceParams : NSObject <NSCopying>
+SNAPBEAUTY_PUBLIC @interface SnapBeautyFaceParams : NSObject <NSCopying>
 @property (nonatomic) float faceSlimming; // neutral 0
 @property (nonatomic) float faceVTaper; // neutral 0
 @property (nonatomic) float faceNarrowing; // neutral 0
@@ -93,7 +105,7 @@ NS_SWIFT_NAME(FaceParams)
 
 /// Immutable caller-owned snapshot. RGBA8, tightly packed, row zero is the image top.
 NS_SWIFT_NAME(RgbaImage)
-@interface SnapBeautyRgbaImage : NSObject
+SNAPBEAUTY_PUBLIC @interface SnapBeautyRgbaImage : NSObject
 @property (nonatomic, readonly) NSInteger width;
 @property (nonatomic, readonly) NSInteger height;
 @property (nonatomic, readonly, copy) NSData *data;
@@ -101,9 +113,10 @@ NS_SWIFT_NAME(RgbaImage)
 @end
 
 NS_SWIFT_NAME(SnapBeautyEngine)
-@interface SnapBeautyEngine : NSObject
+SNAPBEAUTY_PUBLIC @interface SnapBeautyEngine : NSObject
 
-/// SDK version, e.g. "1.0.0".
+/// SDK version, e.g. "1.0.0". In Swift call `SnapBeautyEngine.version()` (NSObject's class method `version`
+/// shadows the property name there).
 @property (class, nonatomic, readonly) NSString *version;
 + (BOOL)isSupported;
 
@@ -154,13 +167,37 @@ NS_SWIFT_NAME(SnapBeautyEngine)
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 
-/// Sets the filter; nil or @"origin" turns it off. `strength` is 0-1.
+/// Sets the filter; nil or @"origin" turns it off. `strength` is 0-1. A registered filter id works like a built-in one.
+/// A numbered id that is neither built in nor registered fails the next frame instead of falling back to another variant.
 - (void)setFilter:(nullable NSString *)filterId strength:(float)strength NS_SWIFT_NAME(setFilter(_:strength:));
+
+/// Registers a filter LUT shipped by the host app so that `setFilter` can select it.
+/// `png`: an 8-bit opaque PNG LUT, 256x16 (16^3 strip) or 512x512 (64^3 square), decoded exactly like the SDK's own LUTs.
+/// `filterId`: 1-64 characters of [A-Za-z0-9_-], not @"origin", not a built-in filter and not registered before.
+/// Lasts for this engine object (also after `close`). Thread-safe. The host is responsible for the LUT's license and attribution.
+- (BOOL)registerFilter:(NSString *)filterId png:(NSData *)png error:(NSError **)error NS_SWIFT_NAME(registerFilter(_:png:));
+
+/// Same as `registerFilter:png:error:` with an already decoded LUT: tightly packed opaque RGBA8, `width * height * 4` bytes.
+- (BOOL)registerFilter:(NSString *)filterId rgba:(NSData *)rgba width:(NSInteger)width height:(NSInteger)height
+                 error:(NSError **)error NS_SWIFT_NAME(registerFilter(_:rgba:width:height:));
 
 /// Sets the makeup; nil removes it. `strength` is 0-1.
 - (void)setMakeup:(nullable NSString *)makeupId strength:(float)strength NS_SWIFT_NAME(setMakeup(_:strength:));
 
+/// Sets a standalone lipstick that replaces the current makeup's lip color (blush, eye shadow and brows stay)
+/// and ignores the makeup strength. `rgba` holds 4 values in 0-1; A is the maximum opacity at `strength` 1.
+/// nil turns it off and restores the makeup's own lip color. `strength` is 0-1. Invalid input (not 4 finite values,
+/// or a non-finite strength) also turns it off.
+- (void)setLipstick:(nullable NSArray<NSNumber *> *)rgba strength:(float)strength NS_SWIFT_NAME(setLipstick(_:strength:));
+
 /// Processes one BGRA camera frame and returns a BGRA texture (CPU-readable, shared storage).
+/// The buffer must be `kCVPixelFormatType_32BGRA`; for AVCaptureVideoDataOutput set that format in
+/// `videoSettings`. On macOS also request Metal compatibility
+/// (`kCVPixelBufferMetalCompatibilityKey: @YES`, plus `kCVPixelBufferIOSurfacePropertiesKey` for buffers you
+/// allocate yourself) so the pixel buffer can be mapped to a Metal texture without a copy.
+/// @param frontCamera  identifies the camera position of the stream. It only keys the session state:
+///                     changing it resets tracking. The SDK never mirrors the image; pass the same
+///                     value for as long as the same camera is used.
 /// @param timestamp   frame timestamp in nanoseconds (frames with the same timestamp reuse tracking).
 /// @param showOriginal return the unprocessed input instead of the effect.
 - (nullable id<MTLTexture>)processPixelBuffer:(CVPixelBufferRef)pixelBuffer

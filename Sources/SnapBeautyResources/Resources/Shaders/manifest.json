@@ -196,13 +196,13 @@
     "FS_LIP": {
       "sourceFiles": {
         "PRECISION.glsl": "9521f71f6d1540cb768eea2cac3feba1ea074f2516034d7c9d4c7f618b7d4692",
-        "FS_LIP.body.glsl": "fdac50e6cb6914b134543a2fba45ccdd0077657b843d89e698967ae02a830345"
+        "FS_LIP.body.glsl": "a42541f5227fb7ad01eb3c30ffae85f9f2f11ac41577a6401f057faac6944c68"
       },
-      "bodySha256": "f7247900330702f463e7e1d560377a102189f183b59d1db92ff2150b68689bf0",
+      "bodySha256": "e0285a4011cfb5d61d2431ce2bb94af6d5114641af83f45b62be9e230a59e2bf",
       "glslShellSha256": "7791e369e6ef717ff5164c3c9a2d1592bcd5f19efe8dfbbadc5a5dff651bdf9c",
-      "glslSha256": "f7247900330702f463e7e1d560377a102189f183b59d1db92ff2150b68689bf0",
+      "glslSha256": "e0285a4011cfb5d61d2431ce2bb94af6d5114641af83f45b62be9e230a59e2bf",
       "mslShellSha256": "0d87751899148b15eb6e96bf2633d1a3544b878b3e2054e861af243346fdfb8b",
-      "mslSha256": "e9e3c7edde5c016a80bf35eff3296441cc8e5260ade134c6694115de11845d8d"
+      "mslSha256": "51b659809a76cbcd00e2daaacbdc0f82f2d90d3db56c7690f024f9d91bdf977c"
     },
     "VS_POS": {
       "sourceFiles": {
@@ -865,9 +865,33 @@
           "type": "float",
           "offset": 16,
           "bytes": 4
+        },
+        {
+          "name": "uGate",
+          "type": "vec3",
+          "offset": 32,
+          "bytes": 16
+        },
+        {
+          "name": "uGateStep",
+          "type": "vec2",
+          "offset": 48,
+          "bytes": 8
+        },
+        {
+          "name": "uSkinA",
+          "type": "vec4",
+          "offset": 64,
+          "bytes": 16
+        },
+        {
+          "name": "uSkinB",
+          "type": "vec4",
+          "offset": 80,
+          "bytes": 16
         }
       ],
-      "uniformBytes": 32,
+      "uniformBytes": 96,
       "varyings": [
         {
           "name": "vUv",

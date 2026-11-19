@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "lockFile": "tools/porting/runtime/dependencies.lock.json",
+  "lockSha256": "ab5c24e3c1f15c0a238f363adf73417565267addde79640355bdee514c7bf930",
+  "scope": "Pinned original top-level licenses for selected runtime source archives, plus licenses and attribution for the 17 delivered filter LUTs.",
+  "verification": "All 24 files compared byte-for-byte with members of the SHA-256-verified locked upstream archives on 2026-10-19. No upstream license text modified.",
+  "files": [
+    {
+      "artifact": "abseil-cpp",
+      "path": "LICENSE",
+      "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747"
+    },
+    {
+      "artifact": "eigen",
+      "path": "COPYING.APACHE",
+      "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+    },
+    {
+      "artifact": "eigen",
+      "path": "COPYING.BSD",
+      "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+    },
+    {
+      "artifact": "eigen",
+      "path": "COPYING.MINPACK",
+      "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+    },
+    {
+      "artifact": "eigen",
+      "path": "COPYING.MPL2",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "artifact": "eigen",
+      "path": "COPYING.README",
+      "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644"
+    },
+    {
+      "artifact": "farmhash",
+      "path": "COPYING",
+      "sha256": "4162dd091caae234f72d3b57e138174f733e736b2430a4c51b098b17d866fcb6"
+    },
+    {
+      "artifact": "flatbuffers",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "gemmlowp",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "cpuinfo",
+      "path": "LICENSE",
+      "sha256": "8e7e60636c3aa0cb03571a1a841ce5697f9551ff92b3c426c2561613d15ade70"
+    },
+    {
+      "artifact": "ml_dtypes",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "ml_dtypes",
+      "path": "LICENSE.eigen",
+      "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04"
+    },
+    {
+      "artifact": "ruy",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "xnnpack",
+      "path": "LICENSE",
+      "sha256": "63f519e15726f4c4f830bd958f694c84fecb4e0a4cacc527d2696bb71ef95ada"
+    },
+    {
+      "artifact": "opencl_headers",
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "vulkan_headers",
+      "path": "LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "artifact": "fp16_headers",
+      "path": "LICENSE",
+      "sha256": "17e4f539024be2749ee729d1e2f01d24cef12ece8c9bf18e91a4349be29c80bf"
+    },
+    {
+      "artifact": "pthreadpool",
+      "path": "LICENSE",
+      "sha256": "57814a606b4d0fb087d9a534919084b6c11b58a4174cb5a4aef200187780dc3a"
+    },
+    {
+      "artifact": "fp16",
+      "path": "LICENSE",
+      "sha256": "17e4f539024be2749ee729d1e2f01d24cef12ece8c9bf18e91a4349be29c80bf"
+    },
+    {
+      "artifact": "fxdiv",
+      "path": "LICENSE",
+      "sha256": "7cac00006125b1486a27e4801ed66357236e984c540bd323945ab7b66b078ec3"
+    },
+    {
+      "artifact": "fft2d",
+      "path": "readme.txt",
+      "sha256": "5b5e610da10394132a42d82ed6501fe1b83a1d19e1bb160c8ace10ed61708765"
+    },
+    {
+      "artifact": "fft2d",
+      "path": "readme2d.txt",
+      "sha256": "0b2a2082537735a2a576dbec2e8f9c1a09812eac6df6a389502a6ba860072906"
+    },
+    {
+      "artifact": "psimd",
+      "path": "LICENSE",
+      "sha256": "984ce1e0b8ee89d234e28b960381f240e03a07a8031f35012f9c3256f56964e2"
+    },
+    {
+      "artifact": "tensorflow",
+      "path": "LICENSE",
+      "sha256": "71c6915d04265772a0339bed47276942c678b45cc01534210ebe6984fd1aec65"
+    }
+  ],
+  "resourceFiles": [
+    {
+      "sourcePath": "resources/licenses/CC-BY-4.0.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "licenseId": "CC-BY-4.0"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/sdk-manifest.json",
+      "packagedPath": "META-INF/snapbeauty-resources/manifest.json",
+      "sha256": "5f636acba7ea6175c631d4d015cadcd4d5e025e9e39f648910169c1bd4b630f5"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/sdk-NOTICE.md",
+      "packagedPath": "META-INF/snapbeauty-resources/NOTICE.md",
+      "sha256": "f626acb05124738280e1d8ec51ebb8b9db666ed2e90d611628c11f5e45f4469d"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_11-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_11-README.txt",
+      "sha256": "9eaecd8ace869c0b56c4db97a2d4956aef6bd347596a7687ba34a022437feda7"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_14-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_14-README.txt",
+      "sha256": "c492bc0c8533f6f8f5be0529b36cc67832791a7a0a930203cb09bbb1fa84bbe4"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_15-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_15-README.txt",
+      "sha256": "9051edef671f46b343a133fc5c56cedf94a7aacaf098585c416eca39f87c8658"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_16-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_16-README.txt",
+      "sha256": "4de63adc640ceed1cf75c7e4180cd0d803853baa5fc6d6656c1f5d5aeae83ee7"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_17-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_17-README.txt",
+      "sha256": "24d903d6ab397fe2c398c1094db883f0d07245911be41a01c80575997fe0c066"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_18-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_18-README.txt",
+      "sha256": "c9f137015a2eaf6af434ab2ad246d24e3219fd6b11e66d0d61ca5d2ba5b70bbe"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_20-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_20-README.txt",
+      "sha256": "7528849bc69aa620a04e6e6a528e545ef2796d1c551ecc452a93b8cb53088bb3"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_3-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_3-README.txt",
+      "sha256": "8a57e70a7656867e64f20344f86df439368a6f7534a80dc0e75d4b1b67f0b006"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_4-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_4-README.txt",
+      "sha256": "4bf697c18ac44299af1885f6817f114244bf54ddef896d2ddf03375c039006fd"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_5-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_5-README.txt",
+      "sha256": "f8cc53848abd39ce5232afae164dc18fd4d0f92de6640cddba92f6b3b4438abd"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_8-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_8-README.txt",
+      "sha256": "af84c50c318175ea9c10690126298da397d5fe01a0c527eac0c2c31a93e4a338"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_9-README.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/Q-DDL_Pack_9-README.txt",
+      "sha256": "239d3180d4df350b1ee30133672cbcc4ca6109272c2a29b28f5fb89a8da03ec5"
+    },
+    {
+      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/qddl-license-evidence.html",
+      "packagedPath": "META-INF/snapbeauty-resources/upstream/qddl-license-evidence.html",
+      "sha256": "c4b21126114b74430f1530b2b5ef95afe2ce0df98a119c712174b777f02be9e6"
+    },
+    {
+      "sourcePath": "resources/licenses/MediaPipe-canonical-LICENSE.txt",
+      "packagedPath": "META-INF/snapbeauty-resources/MediaPipe-canonical-LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "licenseId": "Apache-2.0"
+    }
+  ]
+}

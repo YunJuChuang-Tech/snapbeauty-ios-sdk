@@ -6,7 +6,7 @@ Paths below identify source sections within this document, not separate archive 
 ========================================================================
 Original paths:
 META-INF/snapbeauty-provenance/NOTICE
-SHA-256: dad698ecebea192711e13ec351fbedd3e5a47478e29e7e5458854d5782471f5b
+SHA-256: 3b2ae67fd1d15c29e9638f4af6b5d084a635493fbe15ca597d284a4b4990c9ad
 ------------------------------------------------------------------------
 # SnapBeauty SDK 第三方声明
 
@@ -38,10 +38,8 @@ Android `META-INF/THIRD-PARTY-NOTICES.txt`，iOS / HarmonyOS `Licenses/Monocyphe
 
 ## 滤镜 LUT
 
-27 张风格滤镜由开放许可 LUT 重采样、量化并经六个全局参数调整后烘焙：
+17 张风格滤镜由开放许可 LUT 重采样、量化并经六个全局参数调整后烘焙：
 
-- RawTherapee Film Simulation Collection（Pat David、Pavlov Dmitry、Michael Ezra），CC BY-SA 4.0；
-  对应改编 LUT 继续按 CC BY-SA 4.0 提供。
 - Q-DDL Free Color LUTs（quickddl.net），CC BY 4.0。
 
 Android AAR 的 `META-INF/THIRD-PARTY-NOTICES.txt` 收录逐项来源、署名、改动与许可全文。署名不表示原作者背书。
@@ -466,442 +464,6 @@ Creative Commons may be contacted at creativecommons.org.
 
 ========================================================================
 Original paths:
-META-INF/snapbeauty-resources/CC-BY-SA-4.0.txt
-SHA-256: 28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5
-------------------------------------------------------------------------
-Attribution-ShareAlike 4.0 International
-
-=======================================================================
-
-Creative Commons Corporation ("Creative Commons") is not a law firm and
-does not provide legal services or legal advice. Distribution of
-Creative Commons public licenses does not create a lawyer-client or
-other relationship. Creative Commons makes its licenses and related
-information available on an "as-is" basis. Creative Commons gives no
-warranties regarding its licenses, any material licensed under their
-terms and conditions, or any related information. Creative Commons
-disclaims all liability for damages resulting from their use to the
-fullest extent possible.
-
-Using Creative Commons Public Licenses
-
-Creative Commons public licenses provide a standard set of terms and
-conditions that creators and other rights holders may use to share
-original works of authorship and other material subject to copyright
-and certain other rights specified in the public license below. The
-following considerations are for informational purposes only, are not
-exhaustive, and do not form part of our licenses.
-
-     Considerations for licensors: Our public licenses are
-     intended for use by those authorized to give the public
-     permission to use material in ways otherwise restricted by
-     copyright and certain other rights. Our licenses are
-     irrevocable. Licensors should read and understand the terms
-     and conditions of the license they choose before applying it.
-     Licensors should also secure all rights necessary before
-     applying our licenses so that the public can reuse the
-     material as expected. Licensors should clearly mark any
-     material not subject to the license. This includes other CC-
-     licensed material, or material used under an exception or
-     limitation to copyright. More considerations for licensors:
-    wiki.creativecommons.org/Considerations_for_licensors
-
-     Considerations for the public: By using one of our public
-     licenses, a licensor grants the public permission to use the
-     licensed material under specified terms and conditions. If
-     the licensor's permission is not necessary for any reason--for
-     example, because of any applicable exception or limitation to
-     copyright--then that use is not regulated by the license. Our
-     licenses grant only permissions under copyright and certain
-     other rights that a licensor has authority to grant. Use of
-     the licensed material may still be restricted for other
-     reasons, including because others have copyright or other
-     rights in the material. A licensor may make special requests,
-     such as asking that all changes be marked or described.
-     Although not required by our licenses, you are encouraged to
-     respect those requests where reasonable. More considerations
-     for the public:
-    wiki.creativecommons.org/Considerations_for_licensees
-
-=======================================================================
-
-Creative Commons Attribution-ShareAlike 4.0 International Public
-License
-
-By exercising the Licensed Rights (defined below), You accept and agree
-to be bound by the terms and conditions of this Creative Commons
-Attribution-ShareAlike 4.0 International Public License ("Public
-License"). To the extent this Public License may be interpreted as a
-contract, You are granted the Licensed Rights in consideration of Your
-acceptance of these terms and conditions, and the Licensor grants You
-such rights in consideration of benefits the Licensor receives from
-making the Licensed Material available under these terms and
-conditions.
-
-
-Section 1 -- Definitions.
-
-  a. Adapted Material means material subject to Copyright and Similar
-     Rights that is derived from or based upon the Licensed Material
-     and in which the Licensed Material is translated, altered,
-     arranged, transformed, or otherwise modified in a manner requiring
-     permission under the Copyright and Similar Rights held by the
-     Licensor. For purposes of this Public License, where the Licensed
-     Material is a musical work, performance, or sound recording,
-     Adapted Material is always produced where the Licensed Material is
-     synched in timed relation with a moving image.
-
-  b. Adapter's License means the license You apply to Your Copyright
-     and Similar Rights in Your contributions to Adapted Material in
-     accordance with the terms and conditions of this Public License.
-
-  c. BY-SA Compatible License means a license listed at
-     creativecommons.org/compatiblelicenses, approved by Creative
-     Commons as essentially the equivalent of this Public License.
-
-  d. Copyright and Similar Rights means copyright and/or similar rights
-     closely related to copyright including, without limitation,
-     performance, broadcast, sound recording, and Sui Generis Database
-     Rights, without regard to how the rights are labeled or
-     categorized. For purposes of this Public License, the rights
-     specified in Section 2(b)(1)-(2) are not Copyright and Similar
-     Rights.
-
-  e. Effective Technological Measures means those measures that, in the
-     absence of proper authority, may not be circumvented under laws
-     fulfilling obligations under Article 11 of the WIPO Copyright
-     Treaty adopted on December 20, 1996, and/or similar international
-     agreements.
-
-  f. Exceptions and Limitations means fair use, fair dealing, and/or
-     any other exception or limitation to Copyright and Similar Rights
-     that applies to Your use of the Licensed Material.
-
-  g. License Elements means the license attributes listed in the name
-     of a Creative Commons Public License. The License Elements of this
-     Public License are Attribution and ShareAlike.
-
-  h. Licensed Material means the artistic or literary work, database,
-     or other material to which the Licensor applied this Public
-     License.
-
-  i. Licensed Rights means the rights granted to You subject to the
-     terms and conditions of this Public License, which are limited to
-     all Copyright and Similar Rights that apply to Your use of the
-     Licensed Material and that the Licensor has authority to license.
-
-  j. Licensor means the individual(s) or entity(ies) granting rights
-     under this Public License.
-
-  k. Share means to provide material to the public by any means or
-     process that requires permission under the Licensed Rights, such
-     as reproduction, public display, public performance, distribution,
-     dissemination, communication, or importation, and to make material
-     available to the public including in ways that members of the
-     public may access the material from a place and at a time
-     individually chosen by them.
-
-  l. Sui Generis Database Rights means rights other than copyright
-     resulting from Directive 96/9/EC of the European Parliament and of
-     the Council of 11 March 1996 on the legal protection of databases,
-     as amended and/or succeeded, as well as other essentially
-     equivalent rights anywhere in the world.
-
-  m. You means the individual or entity exercising the Licensed Rights
-     under this Public License. Your has a corresponding meaning.
-
-
-Section 2 -- Scope.
-
-  a. License grant.
-
-       1. Subject to the terms and conditions of this Public License,
-          the Licensor hereby grants You a worldwide, royalty-free,
-          non-sublicensable, non-exclusive, irrevocable license to
-          exercise the Licensed Rights in the Licensed Material to:
-
-            a. reproduce and Share the Licensed Material, in whole or
-               in part; and
-
-            b. produce, reproduce, and Share Adapted Material.
-
-       2. Exceptions and Limitations. For the avoidance of doubt, where
-          Exceptions and Limitations apply to Your use, this Public
-          License does not apply, and You do not need to comply with
-          its terms and conditions.
-
-       3. Term. The term of this Public License is specified in Section
-          6(a).
-
-       4. Media and formats; technical modifications allowed. The
-          Licensor authorizes You to exercise the Licensed Rights in
-          all media and formats whether now known or hereafter created,
-          and to make technical modifications necessary to do so. The
-          Licensor waives and/or agrees not to assert any right or
-          authority to forbid You from making technical modifications
-          necessary to exercise the Licensed Rights, including
-          technical modifications necessary to circumvent Effective
-          Technological Measures. For purposes of this Public License,
-          simply making modifications authorized by this Section 2(a)
-          (4) never produces Adapted Material.
-
-       5. Downstream recipients.
-
-            a. Offer from the Licensor -- Licensed Material. Every
-               recipient of the Licensed Material automatically
-               receives an offer from the Licensor to exercise the
-               Licensed Rights under the terms and conditions of this
-               Public License.
-
-            b. Additional offer from the Licensor -- Adapted Material.
-               Every recipient of Adapted Material from You
-               automatically receives an offer from the Licensor to
-               exercise the Licensed Rights in the Adapted Material
-               under the conditions of the Adapter's License You apply.
-
-            c. No downstream restrictions. You may not offer or impose
-               any additional or different terms or conditions on, or
-               apply any Effective Technological Measures to, the
-               Licensed Material if doing so restricts exercise of the
-               Licensed Rights by any recipient of the Licensed
-               Material.
-
-       6. No endorsement. Nothing in this Public License constitutes or
-          may be construed as permission to assert or imply that You
-          are, or that Your use of the Licensed Material is, connected
-          with, or sponsored, endorsed, or granted official status by,
-          the Licensor or others designated to receive attribution as
-          provided in Section 3(a)(1)(A)(i).
-
-  b. Other rights.
-
-       1. Moral rights, such as the right of integrity, are not
-          licensed under this Public License, nor are publicity,
-          privacy, and/or other similar personality rights; however, to
-          the extent possible, the Licensor waives and/or agrees not to
-          assert any such rights held by the Licensor to the limited
-          extent necessary to allow You to exercise the Licensed
-          Rights, but not otherwise.
-
-       2. Patent and trademark rights are not licensed under this
-          Public License.
-
-       3. To the extent possible, the Licensor waives any right to
-          collect royalties from You for the exercise of the Licensed
-          Rights, whether directly or through a collecting society
-          under any voluntary or waivable statutory or compulsory
-          licensing scheme. In all other cases the Licensor expressly
-          reserves any right to collect such royalties.
-
-
-Section 3 -- License Conditions.
-
-Your exercise of the Licensed Rights is expressly made subject to the
-following conditions.
-
-  a. Attribution.
-
-       1. If You Share the Licensed Material (including in modified
-          form), You must:
-
-            a. retain the following if it is supplied by the Licensor
-               with the Licensed Material:
-
-                 i. identification of the creator(s) of the Licensed
-                    Material and any others designated to receive
-                    attribution, in any reasonable manner requested by
-                    the Licensor (including by pseudonym if
-                    designated);
-
-                ii. a copyright notice;
-
-               iii. a notice that refers to this Public License;
-
-                iv. a notice that refers to the disclaimer of
-                    warranties;
-
-                 v. a URI or hyperlink to the Licensed Material to the
-                    extent reasonably practicable;
-
-            b. indicate if You modified the Licensed Material and
-               retain an indication of any previous modifications; and
-
-            c. indicate the Licensed Material is licensed under this
-               Public License, and include the text of, or the URI or
-               hyperlink to, this Public License.
-
-       2. You may satisfy the conditions in Section 3(a)(1) in any
-          reasonable manner based on the medium, means, and context in
-          which You Share the Licensed Material. For example, it may be
-          reasonable to satisfy the conditions by providing a URI or
-          hyperlink to a resource that includes the required
-          information.
-
-       3. If requested by the Licensor, You must remove any of the
-          information required by Section 3(a)(1)(A) to the extent
-          reasonably practicable.
-
-  b. ShareAlike.
-
-     In addition to the conditions in Section 3(a), if You Share
-     Adapted Material You produce, the following conditions also apply.
-
-       1. The Adapter's License You apply must be a Creative Commons
-          license with the same License Elements, this version or
-          later, or a BY-SA Compatible License.
-
-       2. You must include the text of, or the URI or hyperlink to, the
-          Adapter's License You apply. You may satisfy this condition
-          in any reasonable manner based on the medium, means, and
-          context in which You Share Adapted Material.
-
-       3. You may not offer or impose any additional or different terms
-          or conditions on, or apply any Effective Technological
-          Measures to, Adapted Material that restrict exercise of the
-          rights granted under the Adapter's License You apply.
-
-
-Section 4 -- Sui Generis Database Rights.
-
-Where the Licensed Rights include Sui Generis Database Rights that
-apply to Your use of the Licensed Material:
-
-  a. for the avoidance of doubt, Section 2(a)(1) grants You the right
-     to extract, reuse, reproduce, and Share all or a substantial
-     portion of the contents of the database;
-
-  b. if You include all or a substantial portion of the database
-     contents in a database in which You have Sui Generis Database
-     Rights, then the database in which You have Sui Generis Database
-     Rights (but not its individual contents) is Adapted Material,
-     including for purposes of Section 3(b); and
-
-  c. You must comply with the conditions in Section 3(a) if You Share
-     all or a substantial portion of the contents of the database.
-
-For the avoidance of doubt, this Section 4 supplements and does not
-replace Your obligations under this Public License where the Licensed
-Rights include other Copyright and Similar Rights.
-
-
-Section 5 -- Disclaimer of Warranties and Limitation of Liability.
-
-  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
-     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
-     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
-     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
-     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
-     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
-     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
-     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
-     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
-     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
-
-  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
-     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
-     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
-     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
-     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
-     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
-     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
-     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
-     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
-
-  c. The disclaimer of warranties and limitation of liability provided
-     above shall be interpreted in a manner that, to the extent
-     possible, most closely approximates an absolute disclaimer and
-     waiver of all liability.
-
-
-Section 6 -- Term and Termination.
-
-  a. This Public License applies for the term of the Copyright and
-     Similar Rights licensed here. However, if You fail to comply with
-     this Public License, then Your rights under this Public License
-     terminate automatically.
-
-  b. Where Your right to use the Licensed Material has terminated under
-     Section 6(a), it reinstates:
-
-       1. automatically as of the date the violation is cured, provided
-          it is cured within 30 days of Your discovery of the
-          violation; or
-
-       2. upon express reinstatement by the Licensor.
-
-     For the avoidance of doubt, this Section 6(b) does not affect any
-     right the Licensor may have to seek remedies for Your violations
-     of this Public License.
-
-  c. For the avoidance of doubt, the Licensor may also offer the
-     Licensed Material under separate terms or conditions or stop
-     distributing the Licensed Material at any time; however, doing so
-     will not terminate this Public License.
-
-  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
-     License.
-
-
-Section 7 -- Other Terms and Conditions.
-
-  a. The Licensor shall not be bound by any additional or different
-     terms or conditions communicated by You unless expressly agreed.
-
-  b. Any arrangements, understandings, or agreements regarding the
-     Licensed Material not stated herein are separate from and
-     independent of the terms and conditions of this Public License.
-
-
-Section 8 -- Interpretation.
-
-  a. For the avoidance of doubt, this Public License does not, and
-     shall not be interpreted to, reduce, limit, restrict, or impose
-     conditions on any use of the Licensed Material that could lawfully
-     be made without permission under this Public License.
-
-  b. To the extent possible, if any provision of this Public License is
-     deemed unenforceable, it shall be automatically reformed to the
-     minimum extent necessary to make it enforceable. If the provision
-     cannot be reformed, it shall be severed from this Public License
-     without affecting the enforceability of the remaining terms and
-     conditions.
-
-  c. No term or condition of this Public License will be waived and no
-     failure to comply consented to unless expressly agreed to by the
-     Licensor.
-
-  d. Nothing in this Public License constitutes or may be interpreted
-     as a limitation upon, or waiver of, any privileges and immunities
-     that apply to the Licensor or You, including from the legal
-     processes of any jurisdiction or authority.
-
-
-=======================================================================
-
-Creative Commons is not a party to its public
-licenses. Notwithstanding, Creative Commons may elect to apply one of
-its public licenses to material it publishes and in those instances
-will be considered the “Licensor.” The text of the Creative Commons
-public licenses is dedicated to the public domain under the CC0 Public
-Domain Dedication. Except for the limited purpose of indicating that
-material is shared under a Creative Commons public license or as
-otherwise permitted by the Creative Commons policies published at
-creativecommons.org/policies, Creative Commons does not authorize the
-use of the trademark "Creative Commons" or any other trademark or logo
-of Creative Commons without its prior written consent including,
-without limitation, in connection with any unauthorized modifications
-to any of its public licenses or any other arrangements,
-understandings, or agreements concerning use of licensed material. For
-the avoidance of doubt, this paragraph does not form part of the
-public licenses.
-
-Creative Commons may be contacted at creativecommons.org.
-
-
-
-
-========================================================================
-Original paths:
 META-INF/snapbeauty-resources/MediaPipe-canonical-LICENSE.txt
 SHA-256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 ------------------------------------------------------------------------
@@ -1112,21 +674,13 @@ SHA-256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 ========================================================================
 Original paths:
 META-INF/snapbeauty-resources/NOTICE.md
-SHA-256: b8fd8f0bdea4696ff305b406d74546fd2ecfea091268c25724615f39a28fe9fe
+SHA-256: f626acb05124738280e1d8ec51ebb8b9db666ed2e90d611628c11f5e45f4469d
 ------------------------------------------------------------------------
 # 滤镜 LUT 来源、署名与改动说明
 
-本批 27 张滤镜基于开放许可 LUT，经重采样、量化以及强度、提亮、冷暖、色调、饱和度和对比度调整后烘焙。逐项来源和许可见下表及 manifest.json。
+本批 17 张滤镜基于开放许可 LUT，经重采样、量化以及强度、提亮、冷暖、色调、饱和度和对比度调整后烘焙。逐项来源和许可见下表及 manifest.json。
 
-## RawTherapee：10张
-
-来源：RawTherapee Film Simulation Collection 2015-09-20，https://rawtherapee.com/shared/HaldCLUT.zip 。
-署名：**Pat David、Pavlov Dmitry、Michael Ezra**。
-原素材及本批对应改编LUT按 **CC BY-SA 4.0** 提供：https://creativecommons.org/licenses/by-sa/4.0/ 。
-原始集合README保存在 upstream/RawTherapee-README.txt，许可全文在 resources/licenses/CC-BY-SA-4.0.txt。
-上述重采样、量化、六参数调整由本项目完成；改编LUT继续按相同许可提供，不加密、不限制提取，也不附加限制许可权利的条款。署名不表示原作者背书。
-
-## Q-DDL：17张
+## Q-DDL
 
 署名：**Q-DDL Free Color LUTs (quickddl.net)**。
 原站 http://quickddl.net/free_color_luts 已关闭；取得途径为 https://www.photoshoplus.fr/telecharger-luts-2/ 的镜像包。
@@ -1140,50 +694,35 @@ SHA-256: b8fd8f0bdea4696ff305b406d74546fd2ecfea091268c25724615f39a28fe9fe
 | --- | --- | --- |
 | bright1.png | color-grading/Q-DDL_Pack_9/Horn.cube | CC-BY-4.0 |
 | bright2.png | film-simulation/Q-DDL_Pack_14/Oconnor.cube | CC-BY-4.0 |
-| bright3.png | rt:HaldCLUT/Color/CreativePack-1/TealMagentaGold.png | CC-BY-SA-4.0 |
 | bright4.png | color-moods/Q-DDL_Pack_20/Case.cube | CC-BY-4.0 |
 | rose1.png | color-moods/Q-DDL_Pack_16/Stewart.cube | CC-BY-4.0 |
 | rose2.png | cinematic/Q-DDL_Pack_3/French.cube | CC-BY-4.0 |
-| rose3.png | rt:HaldCLUT/Color/Kodak/Kodak Kodachrome 200.png | CC-BY-SA-4.0 |
 | rose7.png | cinematic/Q-DDL_Pack_4/Alexander.cube | CC-BY-4.0 |
 | rose8.png | film-simulation/Q-DDL_Pack_14/Sweeney.cube | CC-BY-4.0 |
-| stylized11.png | rt:HaldCLUT/Color/Polaroid/Polaroid 690 Cold 5 ++.png | CC-BY-SA-4.0 |
 | stylized5.png | cinematic/Q-DDL_Pack_5/Dodson.cube | CC-BY-4.0 |
-| mono1.png | rt:HaldCLUT/Black-and-White/Kodak/Kodak BW 400 CN.png | CC-BY-SA-4.0 |
 | cool1.png | film-simulation/Q-DDL_Pack_15/Ritter.cube | CC-BY-4.0 |
 | cool11.png | film-simulation/Q-DDL_Pack_14/Navarro.cube | CC-BY-4.0 |
 | cool4.png | color-grading/Q-DDL_Pack_8/Leonard.cube | CC-BY-4.0 |
 | peach1.png | color-moods/Q-DDL_Pack_18/Christensen.cube | CC-BY-4.0 |
 | peach5.png | color-moods/Q-DDL_Pack_17/King.cube | CC-BY-4.0 |
-| warm1.png | rt:HaldCLUT/Color/Kodak/Kodak Portra 400 1 -.png | CC-BY-SA-4.0 |
-| warm2.png | rt:HaldCLUT/Color/Polaroid/Polaroid 669 4 +.png | CC-BY-SA-4.0 |
-| fresh1.png | rt:HaldCLUT/Color/Fuji/Fuji Superia X-Tra 800.png | CC-BY-SA-4.0 |
 | fresh2.png | cinematic/Q-DDL_Pack_3/York.cube | CC-BY-4.0 |
 | fresh3.png | color-moods/Q-DDL_Pack_20/Pena.cube | CC-BY-4.0 |
 | muted1.png | film-simulation/Q-DDL_Pack_11/Thompson.cube | CC-BY-4.0 |
-| muted5.png | rt:HaldCLUT/Color/CreativePack-1/SoftWarming.png | CC-BY-SA-4.0 |
 | natural1.png | color-moods/Q-DDL_Pack_17/Luna.cube | CC-BY-4.0 |
-| natural2.png | rt:HaldCLUT/Color/Kodak/Kodak Portra 400 NC 1 -.png | CC-BY-SA-4.0 |
-| natural4.png | rt:HaldCLUT/Color/Fuji/Fuji Superia 400 1 -.png | CC-BY-SA-4.0 |
 
-存储格式：部分 LUT 将 RGB8 64³ 结果三线性采样到 16³ 并量化，按 256×16 蓝切片横排；其他 LUT 保留 64³。
+存储格式：RGB8 64³ 结果三线性采样到 16³ 并量化，按 256×16 蓝切片横排。
 
 
 
 ========================================================================
 Original paths:
 META-INF/snapbeauty-resources/manifest.json
-SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
+SHA-256: 5f636acba7ea6175c631d4d015cadcd4d5e025e9e39f648910169c1bd4b630f5
 ------------------------------------------------------------------------
 {
   "schema": 1,
   "description": "Open-licensed LUTs resampled, quantized and adjusted with six global color parameters.",
   "licenses": {
-    "CC-BY-SA-4.0": {
-      "sourcePath": "resources/licenses/CC-BY-SA-4.0.txt",
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
-      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
     "CC-BY-4.0": {
       "sourcePath": "resources/licenses/CC-BY-4.0.txt",
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
@@ -1204,13 +743,6 @@ SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
       "baseCollection": "Q-DDL",
       "licenseId": "CC-BY-4.0",
       "sha256": "9868789d6872265ab7dd3d40697c74dbdadaa5e1da96541b1a19bb65b049d28f"
-    },
-    {
-      "target": "bright3",
-      "baseSource": "rt:HaldCLUT/Color/CreativePack-1/TealMagentaGold.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "18eb45b94622f4391b6902a829438c7fcb76466518d0c0ff9fd1b29159907b40"
     },
     {
       "target": "bright4",
@@ -1234,13 +766,6 @@ SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
       "sha256": "e6ee38916bdeb9912730d86d83d35751d9e36b8b08ae0f8014e87aa10293b294"
     },
     {
-      "target": "rose3",
-      "baseSource": "rt:HaldCLUT/Color/Kodak/Kodak Kodachrome 200.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "e588e91615fb2727aaeb85cc58f807ab7e08567298061e13c7a44c077c0f714b"
-    },
-    {
       "target": "rose7",
       "baseSource": "cinematic/Q-DDL_Pack_4/Alexander.cube",
       "baseCollection": "Q-DDL",
@@ -1255,25 +780,11 @@ SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
       "sha256": "defe84baeb429007710a4d3e623bbd1612d2a1c1b3cb4dc2193e59f5533a7c51"
     },
     {
-      "target": "stylized11",
-      "baseSource": "rt:HaldCLUT/Color/Polaroid/Polaroid 690 Cold 5 ++.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "76008f6d7a1543d24f187045886ee47819d02386a8127e50119c24c8a8f8006a"
-    },
-    {
       "target": "stylized5",
       "baseSource": "cinematic/Q-DDL_Pack_5/Dodson.cube",
       "baseCollection": "Q-DDL",
       "licenseId": "CC-BY-4.0",
       "sha256": "dd63372694b1adcc7a7a61f3372ddbbadd7a25da7fb879c74313be845174fb00"
-    },
-    {
-      "target": "mono1",
-      "baseSource": "rt:HaldCLUT/Black-and-White/Kodak/Kodak BW 400 CN.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "2adb0e316f2a5d77ccb092bf1a5994bdde065c122bc221aa96a3fa494ea215b6"
     },
     {
       "target": "cool1",
@@ -1311,27 +822,6 @@ SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
       "sha256": "fefadf17f7cfb85ff6f2e627387c4909c925c2ca8a731e338e0b36e260b7d8b6"
     },
     {
-      "target": "warm1",
-      "baseSource": "rt:HaldCLUT/Color/Kodak/Kodak Portra 400 1 -.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "89cd1f29ca63fc994d9799ddaf9eb149aa883b157f4b1f5d133962ad9cd4d81c"
-    },
-    {
-      "target": "warm2",
-      "baseSource": "rt:HaldCLUT/Color/Polaroid/Polaroid 669 4 +.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "f90b5781d42c5de44bdbd603d162989867b61e28cbad6a3b512b1ea8d0f7f920"
-    },
-    {
-      "target": "fresh1",
-      "baseSource": "rt:HaldCLUT/Color/Fuji/Fuji Superia X-Tra 800.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "c5c6a53cf4b2634eed42c928db18c7850f4567043c6c17ed045ee9ef0460d32d"
-    },
-    {
       "target": "fresh2",
       "baseSource": "cinematic/Q-DDL_Pack_3/York.cube",
       "baseCollection": "Q-DDL",
@@ -1353,32 +843,11 @@ SHA-256: 5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad
       "sha256": "135ad4e4e1bb2453237e3fcdb5f355244406ad2495018c63fb53c2d69c8d3be5"
     },
     {
-      "target": "muted5",
-      "baseSource": "rt:HaldCLUT/Color/CreativePack-1/SoftWarming.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "8c57c847c60ba985191f4e817d160775dd7c00bd8963b48a19f68a7af05edcf5"
-    },
-    {
       "target": "natural1",
       "baseSource": "color-moods/Q-DDL_Pack_17/Luna.cube",
       "baseCollection": "Q-DDL",
       "licenseId": "CC-BY-4.0",
       "sha256": "d76634a9c0564f059dc2ea904228ceea1828ad299add88eb38098a8c8fd3ae74"
-    },
-    {
-      "target": "natural2",
-      "baseSource": "rt:HaldCLUT/Color/Kodak/Kodak Portra 400 NC 1 -.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "58dad20d4809c0a4a7d9ea7f64982e1971198b90359c42095838b583978f785f"
-    },
-    {
-      "target": "natural4",
-      "baseSource": "rt:HaldCLUT/Color/Fuji/Fuji Superia 400 1 -.png",
-      "baseCollection": "RawTherapee",
-      "licenseId": "CC-BY-SA-4.0",
-      "sha256": "e8ca3e08ee2048e98010eda95fbd93ec6c6f657d1bd5a2ea61372ff892acc8b5"
     }
   ]
 }
@@ -1599,51 +1068,6 @@ SHA-256: 239d3180d4df350b1ee30133672cbcc4ca6109272c2a29b28f5fb89a8da03ec5
 These LUTs are free to use in any personal or commercial projects.
 
  
-
-
-========================================================================
-Original paths:
-META-INF/snapbeauty-resources/upstream/RawTherapee-README.txt
-SHA-256: 363cffb318e25dc4f880e070915aceddfe842e1fdb0a68216bef04719185c69c
-------------------------------------------------------------------------
-RawTherapee Film Simulation Collection version 2015-09-20
-CC BY-SA 4.0
-
-This archive contains a collection of film simulation profiles in the Hald Color Look-Up Table pattern (Hald CLUT). Unless otherwise noted in the filename, they are all in the sRGB color space, 8-bit per channel, in the PNG image format. Most of them are designed to mimic the results of various film stocks, pushed and pulled in various ways or faded over time.
-
-Apply these images to your photos in Hald CLUT-capable software such as RawTherapee to instantly match the colors of your photo to the chosen reference.
-
-Use the level 12 pattern Hald_CLUT_Identity_12.tif to create your own profiles, see the RawPedia article to find out how.
-
-Learn more about Hald CLUTs here:
-http://rawpedia.rawtherapee.com/Film_Simulation
-http://www.quelsolaar.com/technology/clut.html
-http://blog.patdavid.net/2013/08/film-emulation-presets-in-gmic-gimp.html
-http://blog.patdavid.net/2013/09/film-emulation-presets-in-gmic-gimp.html
-
-Credits:
-Pat David - http://rawtherapee.com/forum/memberlist.php?mode=viewprofile&u=5101
-Pavlov Dmitry - http://rawtherapee.com/forum/memberlist.php?mode=viewprofile&u=5592
-Michael Ezra - http://rawtherapee.com/forum/memberlist.php?mode=viewprofile&u=1442
-
-Disclaimer:
-The trademarked names which may appear in the filenames of the Hald CLUT images are there for informational purposes only. They serve only to inform the user which film stock the given Hald CLUT image is designed to approximate. As there is no way to convey this information other than by using the trademarked name, we believe this constitutes fair use. Neither the publisher nor the authors are affiliated with or endorsed by the companies that own the trademarks.
-
-Changelog:
-2015-09-20
-- Added the "CreativePack-1" color collection.
-- Converted all TIFFs to PNG (except for the identity image).
-2015-03-25
-- The identity CLUT had a bug causing cyan colors in the highlights, it has been replaced with a fixed one.
-- Numbered the files so they are sorted in the correct order when pushed or pulled (--, -, normal, +, ++).
-2014-08-25
-- The first public release.
-- Re-organized into Color and Black-and-White, sub-folders sorted by brand.
-2014-08-15
-- Expanded README.txt and added disclaimer.
-2014-07-05
-- The first internal release.
-- All images re-compressed with maximum lossless compression.
 
 
 ========================================================================
@@ -3527,13 +2951,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ========================================================================
 Original paths:
 META-INF/snapbeauty-runtime/license-manifest.json
-SHA-256: f22621603aa8eca9b6d01cccdd0f7d1101321d5bf5eff16748c8cf2dd27565e6
+SHA-256: 19d2c5ab2c39319e2399b54c9f758a3da5cbac48bf2e2491b5fc4f1f39d73cb4
 ------------------------------------------------------------------------
 {
   "schema": 1,
   "lockFile": "tools/porting/runtime/dependencies.lock.json",
   "lockSha256": "ab5c24e3c1f15c0a238f363adf73417565267addde79640355bdee514c7bf930",
-  "scope": "Pinned original top-level licenses for selected runtime source archives, plus licenses and attribution for the 27 delivered filter LUTs.",
+  "scope": "Pinned original top-level licenses for selected runtime source archives, plus licenses and attribution for the 17 delivered filter LUTs.",
   "verification": "All 24 files compared byte-for-byte with members of the SHA-256-verified locked upstream archives on 2026-10-19. No upstream license text modified.",
   "files": [
     {
@@ -3659,12 +3083,6 @@ SHA-256: f22621603aa8eca9b6d01cccdd0f7d1101321d5bf5eff16748c8cf2dd27565e6
   ],
   "resourceFiles": [
     {
-      "sourcePath": "resources/licenses/CC-BY-SA-4.0.txt",
-      "packagedPath": "META-INF/snapbeauty-resources/CC-BY-SA-4.0.txt",
-      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
-      "licenseId": "CC-BY-SA-4.0"
-    },
-    {
       "sourcePath": "resources/licenses/CC-BY-4.0.txt",
       "packagedPath": "META-INF/snapbeauty-resources/CC-BY-4.0.txt",
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
@@ -3673,12 +3091,12 @@ SHA-256: f22621603aa8eca9b6d01cccdd0f7d1101321d5bf5eff16748c8cf2dd27565e6
     {
       "sourcePath": "resources/filter-luts/open-lut-27-v2/sdk-manifest.json",
       "packagedPath": "META-INF/snapbeauty-resources/manifest.json",
-      "sha256": "5b25ac45ff0dfa2c2d5c37667ca705f0afb1932a8415d820eb9627e6ec39c3ad"
+      "sha256": "5f636acba7ea6175c631d4d015cadcd4d5e025e9e39f648910169c1bd4b630f5"
     },
     {
       "sourcePath": "resources/filter-luts/open-lut-27-v2/sdk-NOTICE.md",
       "packagedPath": "META-INF/snapbeauty-resources/NOTICE.md",
-      "sha256": "b8fd8f0bdea4696ff305b406d74546fd2ecfea091268c25724615f39a28fe9fe"
+      "sha256": "f626acb05124738280e1d8ec51ebb8b9db666ed2e90d611628c11f5e45f4469d"
     },
     {
       "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/Q-DDL_Pack_11-README.txt",
@@ -3744,11 +3162,6 @@ SHA-256: f22621603aa8eca9b6d01cccdd0f7d1101321d5bf5eff16748c8cf2dd27565e6
       "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/qddl-license-evidence.html",
       "packagedPath": "META-INF/snapbeauty-resources/upstream/qddl-license-evidence.html",
       "sha256": "c4b21126114b74430f1530b2b5ef95afe2ce0df98a119c712174b777f02be9e6"
-    },
-    {
-      "sourcePath": "resources/filter-luts/open-lut-27-v2/upstream/RawTherapee-README.txt",
-      "packagedPath": "META-INF/snapbeauty-resources/upstream/RawTherapee-README.txt",
-      "sha256": "363cffb318e25dc4f880e070915aceddfe842e1fdb0a68216bef04719185c69c"
     },
     {
       "sourcePath": "resources/licenses/MediaPipe-canonical-LICENSE.txt",
