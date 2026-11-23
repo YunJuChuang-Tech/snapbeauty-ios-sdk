@@ -112,18 +112,37 @@ SNAPBEAUTY_PUBLIC @interface SnapBeautyRgbaImage : NSObject
 - (instancetype)init NS_UNAVAILABLE;
 @end
 
+typedef NS_ENUM(NSInteger, SnapBeautyInferenceBackend) {
+    /// Default: automatically uses Metal GPU when the optional `SnapBeautyGPU` dependency is linked,
+    /// and uses XNNPACK CPU otherwise.
+    SnapBeautyInferenceBackendAuto = 0,
+    /// Forces XNNPACK CPU inference even when `SnapBeautyGPU` is linked.
+    SnapBeautyInferenceBackendCPU = 1,
+    /// Requests Metal GPU inference; falls back to XNNPACK CPU if `SnapBeautyGPU` is absent or unsupported.
+    SnapBeautyInferenceBackendGPU = 2,
+} NS_SWIFT_NAME(InferenceBackend);
+
 NS_SWIFT_NAME(SnapBeautyEngine)
 SNAPBEAUTY_PUBLIC @interface SnapBeautyEngine : NSObject
 
 /// SDK version, e.g. "1.0.0". In Swift call `SnapBeautyEngine.version()` (NSObject's class method `version`
 /// shadows the property name there).
 @property (class, nonatomic, readonly) NSString *version;
+/// YES when the optional `SnapBeautyGPU` dependency is linked into the host process and a Metal device is available.
+@property (class, nonatomic, readonly) BOOL isGpuInferenceAvailable;
 + (BOOL)isSupported;
 
 /// Number of faces found in the last processed frame.
 @property (nonatomic, readonly) NSInteger faceCount;
 @property (nonatomic, readonly) BOOL faceDetected;
 @property (nonatomic, readonly, copy) NSString *detectDelegate;
+/// Preferred face-landmark inference backend (default `SnapBeautyInferenceBackendAuto`).
+/// When the optional `SnapBeautyGPU` dependency is linked, `Auto` enables full-precision TFLite Metal GPU
+/// inference automatically without code changes; omitting `SnapBeautyGPU` defaults to XNNPACK CPU.
+/// Set `SnapBeautyInferenceBackendCPU` to force CPU even when `SnapBeautyGPU` is linked. Preserved across `close`.
+@property (nonatomic) SnapBeautyInferenceBackend inferenceBackend;
+/// Concrete landmark inference backend active in the live session (`GPU` or `CPU`; `CPU` before session creation).
+@property (nonatomic, readonly) SnapBeautyInferenceBackend activeInferenceBackend;
 @property (nonatomic) BOOL debugLipFull;
 @property (nonatomic) BOOL debugCaptureLipInput;
 

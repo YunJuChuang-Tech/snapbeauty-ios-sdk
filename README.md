@@ -1,10 +1,10 @@
 # SnapBeauty iOS SDK
 
-SnapBeauty iOS SDK 1.3.2 for Swift Package Manager. iOS 15 or later; arm64 devices and Apple Silicon simulators. Intel simulators are not supported.
+SnapBeauty iOS SDK 1.3.5 for Swift Package Manager. iOS 15 or later; arm64 devices and Apple Silicon simulators. Intel simulators are not supported.
 
 ## Integration
 
-In Xcode, add this repository as a package dependency and select version 1.3.2. Add the single `SnapBeautySDK` product to the app target. The SDK binary, its models, shaders, and platform-specific Metal library are supplied together by that product.
+In Xcode, add this repository as a package dependency and select version 1.3.5. Add the single `SnapBeautySDK` product to the app target. The SDK binary, its models, shaders, and platform-specific Metal library are supplied together by that product.
 
 ```swift
 import SnapBeauty
@@ -15,6 +15,8 @@ let engine = try SnapBeautyResources.makeEngine()
 ```
 
 Initialize a valid license before creating an engine. Missing or invalid authorization returns the original image without effects. Use one engine on one queue.
+
+To enable optional Metal GPU inference, also add the `SnapBeautyGPU` product to the app target. Without it, the SDK uses the CPU runtime.
 
 ## Host makeup resources
 
