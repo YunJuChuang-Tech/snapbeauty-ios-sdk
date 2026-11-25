@@ -46,27 +46,33 @@ float redness(float3 c) {
     return (c.r - c.g) / (c.r + c.g + c.b + 0.001);
 }
 void eval() {
-    float3 source = uSrc.sample(xm_sampler, vUv).rgb;
-    float coverage = clamp(vA, 0.0, 1.0) * uLipMask.sample(xm_sampler, vMaskUv).r;
+    float2 srcUv = uAlpha < 0.0 ? vMaskUv : vUv;
+    float2 maskUv = uAlpha < 0.0 ? vUv : vMaskUv;
+    float3 source = uSrc.sample(xm_sampler, srcUv).rgb;
+    float coverage = clamp(vA, 0.0, 1.0) * uLipMask.sample(xm_sampler, maskUv).r;
     float gate = 1.0;
     if (uGate.x < 1.0) {
         float2 dx = float2(uGateStep.x, 0.0);
         float2 dy = float2(0.0, uGateStep.y);
-        float q = (redness(source) + redness(uSrc.sample(xm_sampler, vUv + dx).rgb) + redness(uSrc.sample(xm_sampler, vUv - dx).rgb)
-                 + redness(uSrc.sample(xm_sampler, vUv + dy).rgb) + redness(uSrc.sample(xm_sampler, vUv - dy).rgb)) * 0.2;
+        float q = (redness(source) + redness(uSrc.sample(xm_sampler, srcUv + dx).rgb) + redness(uSrc.sample(xm_sampler, srcUv - dx).rgb)
+                 + redness(uSrc.sample(xm_sampler, srcUv + dy).rgb) + redness(uSrc.sample(xm_sampler, srcUv - dy).rgb)) * 0.2;
         float skin = (redness(uSrc.sample(xm_sampler, uSkinA.xy).rgb) + redness(uSrc.sample(xm_sampler, uSkinA.zw).rgb)
                     + redness(uSrc.sample(xm_sampler, uSkinB.xy).rgb) + redness(uSrc.sample(xm_sampler, uSkinB.zw).rgb)) * 0.25;
         gate = mix(uGate.x, 1.0, smoothstep(uGate.y, uGate.z, q - skin));
     }
-    float luminance = dot(source, float3(0.299, 0.587, 0.114));
-    float shadeLuminance = dot(uColor, float3(0.299, 0.587, 0.114));
-    float shadeScale = min(sqrt(luminance / max(shadeLuminance, 0.05)), 1.0);
-    float3 shade = uColor * shadeScale;
-    float opacity = clamp(uAlpha * coverage * gate, 0.0, 1.0);
-    float amount = opacity * (0.35 + 0.37 * sqrt(luminance));
-    float3 result = mix(source, shade, amount);
-    result += opacity * (0.04 - 0.17 * luminance) * (float3(1.0) - source);
-    gl_FragColor = float4(clamp(result, 0.0, 1.0), 1.0);
+    if (uAlpha < 0.0) {
+        gl_FragColor = float4(float3(coverage * gate), 1.0);
+    } else {
+        float luminance = dot(source, float3(0.299, 0.587, 0.114));
+        float shadeLuminance = dot(uColor, float3(0.299, 0.587, 0.114));
+        float shadeScale = min(sqrt(luminance / max(shadeLuminance, 0.05)), 1.0);
+        float3 shade = uColor * shadeScale;
+        float opacity = clamp(uAlpha * coverage * gate, 0.0, 1.0);
+        float amount = opacity * (0.35 + 0.37 * sqrt(luminance));
+        float3 result = mix(source, shade, amount);
+        result += opacity * (0.04 - 0.17 * luminance) * (float3(1.0) - source);
+        gl_FragColor = float4(clamp(result, 0.0, 1.0), 1.0);
+    }
 }
 
 };

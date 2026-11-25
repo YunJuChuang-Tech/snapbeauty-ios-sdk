@@ -71,6 +71,7 @@ SNAPBEAUTY_PUBLIC @interface SnapBeautySkinParams : NSObject <NSCopying>
 @property (nonatomic) float undereyeBags; // 去黑眼圈
 @property (nonatomic) float smileLines; // 去法令纹
 @property (nonatomic) float faceContour; // 五官立体
+@property (nonatomic) float aegyoSal; // 眼妆（含卧蚕提亮与下沿阴影）
 @end
 
 /// Face shape parameters, 0-1. Bidirectional ones are neutral at 0.5, the rest at 0.
