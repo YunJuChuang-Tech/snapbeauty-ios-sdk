@@ -4,9 +4,9 @@
 #import <CoreVideo/CoreVideo.h>
 #import <Metal/Metal.h>
 
-// Public symbols stay visible when the library is built with -fvisibility=hidden (macOS dylib).
-// iOS ships a static library, so the marker is empty there and iOS objects are unchanged.
-#if defined(__APPLE__) && TARGET_OS_OSX
+// Public symbols stay visible when the library is built with -fvisibility=hidden
+// (macOS dylib and iOS single-object prelinked static archive).
+#if defined(__APPLE__)
 #define SNAPBEAUTY_PUBLIC __attribute__((visibility("default")))
 #else
 #define SNAPBEAUTY_PUBLIC
@@ -116,11 +116,11 @@ SNAPBEAUTY_PUBLIC @interface SnapBeautyRgbaImage : NSObject
 typedef NS_ENUM(NSInteger, SnapBeautyInferenceBackend) {
     /// Default: automatically uses Metal GPU when the optional `SnapBeautyGPU` dependency is linked,
     /// and uses XNNPACK CPU otherwise.
-    SnapBeautyInferenceBackendAuto = 0,
+    SnapBeautyInferenceBackendAuto NS_SWIFT_NAME(auto) = 0,
     /// Forces XNNPACK CPU inference even when `SnapBeautyGPU` is linked.
-    SnapBeautyInferenceBackendCPU = 1,
+    SnapBeautyInferenceBackendCPU NS_SWIFT_NAME(cpu) = 1,
     /// Requests Metal GPU inference; falls back to XNNPACK CPU if `SnapBeautyGPU` is absent or unsupported.
-    SnapBeautyInferenceBackendGPU = 2,
+    SnapBeautyInferenceBackendGPU NS_SWIFT_NAME(gpu) = 2,
 } NS_SWIFT_NAME(InferenceBackend);
 
 NS_SWIFT_NAME(SnapBeautyEngine)

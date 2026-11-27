@@ -1,7 +1,0 @@
-Xcode 26.6
-Build version 17F113
-Apple metal version 32023.883 (metalfe-32023.883)
-Target: air64-apple-darwin25.5.0
-Thread model: posix
-InstalledDir: /private/var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.uJw2qz/Metal.xctoolchain/usr/metal/current/bin
-26.5

@@ -1,10 +1,10 @@
 # SnapBeauty iOS SDK
 
-SnapBeauty iOS SDK 1.3.7 for Swift Package Manager. iOS 15 or later; arm64 devices and Apple Silicon simulators. Intel simulators are not supported.
+SnapBeauty iOS SDK 1.3.9 for Swift Package Manager. iOS 15 or later; arm64 devices and Apple Silicon simulators. Intel simulators are not supported.
 
 ## Integration
 
-In Xcode, add this repository as a package dependency and select version 1.3.7. Add the single `SnapBeautySDK` product to the app target. The SDK binary, its models, shaders, and platform-specific Metal library are supplied together by that product.
+In Xcode, add this repository as a package dependency and select version 1.3.9. Add the single `SnapBeautySDK` product to the app target. The SDK binary, its models, shaders, and platform-specific Metal library are supplied together by that product.
 
 ```swift
 import SnapBeauty
